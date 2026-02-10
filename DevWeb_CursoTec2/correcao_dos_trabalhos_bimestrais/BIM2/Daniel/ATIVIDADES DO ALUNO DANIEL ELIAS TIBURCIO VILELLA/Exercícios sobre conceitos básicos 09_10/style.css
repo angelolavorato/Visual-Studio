@@ -1,0 +1,210 @@
+h1 {
+  color: blue;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-style: italic;
+}
+
+.externo {
+  color: green;
+  font-size: 16px;
+}
+
+.bt-classe {
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+#bt-id {
+  background-color: lightgreen;
+  border-radius: 10px;
+}
+
+button[type='button'] {
+  background-color: lightcoral;
+  border-radius: 10px;
+}
+li {
+  color: red;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+#ex2 {
+  margin: 10px;
+}
+
+.primeira {
+  color: red;
+}
+
+.segunda {
+  color: green;
+}
+
+.classe {
+  color: green;
+}
+
+#idnt {
+  color: purple;
+}
+
+.box {
+  width: 50%;
+  border-radius: 10px;
+  height: 200px;
+  padding: 1.5rem;
+  background-color: #fce4ec;
+}
+
+.texto-normal {
+  font-size: 1em;
+}
+
+.texto-grande {
+  font-size: 1.5em;
+}
+
+.caixa1 {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 5px;
+  width: 100px;
+}
+
+.caixa2 {
+  border: 4px solid gray;
+  padding: 20px;
+  margin: 10px;
+  width: 150px;
+}
+
+.caixa3 {
+  border: 6px solid lightgray;
+  padding: 30px;
+  margin: 15px;
+  width: 200px;
+}
+
+.border-box {
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+  border: 5px solid black;
+  background-color: lightgray;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.caixa-de-fora {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: darkblue;
+  border-radius: 10px;
+}
+
+.caixa-absoluta {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: gray;
+  width: 100px;
+  height: 50px;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: #d7aeff;
+  margin: 5px;
+}
+
+.text-1 {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  color: darkblue;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+
+.bloco1 {
+  background-color: #ff8000;
+  width: 100px;
+  height: 100px;
+}
+
+.bloco2 {
+  background-color: #8000ff;
+  width: 100px;
+  height: 100px;
+}
+
+.bloco3 {
+  background: rgb(255, 128, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 128, 0, 1) 20%,
+    rgba(128, 0, 255, 1) 80%
+  );
+  width: 100px;
+  height: 100px;
+}
+
+.fundo {
+  background-image: url('/IMAGES/505.webp');
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 200px;
+  font-size: 24px;
+  color: yellow;
+  text-align: center;
+  font-family: 'impact', spacing;
+  line-height: 8.8;
+  letter-spacing: 3px;
+}
+
+.trans {
+  background-color: #00b700;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.trans:hover {
+  background-color: #88ff88;
+}
+
+.bola {
+  background-image: url('/IMAGES/bola-ouro.png');
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border-radius: 75%;
+  position: relative;
+  animation: mover 5s infinite;
+}
+
+@keyframes mover {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}

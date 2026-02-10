@@ -1,0 +1,12 @@
+p {
+    font-size: 9px;
+  }
+  .border-box {
+    text-align: center;
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #aaa;
+  }

@@ -1,0 +1,183 @@
+<!--VISTO-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titulo1</title>
+</head>
+<body>
+    <section id="1">
+<h2>Formulario / Cadastro<h2>
+<form action="submit" method="post">
+  <label for="name">Nome :</label>
+   <input type="text" id="nome" name="nome" required /><br />
+
+   <label for="email">Email: </label>
+  <input 
+   type="email"
+  name="email"
+ id="email"
+placeholder="email@exemplo.com"
+required
+/>
+<br />
+<br />
+ 
+<label for="senha">Senha:</label>
+<input type="password"
+name="senha"
+id="senha"
+minlength="8"
+required
+/><br /><br />
+ 
+<label for="confirmarsuasenha">Confirme sua senha:</label>
+<input type="password"
+name="senha"
+id="senha"
+minlength="8"
+required
+/><br /><br />
+ 
+
+
+<button type="submit">Enviar dados</button>
+
+
+
+</form> 
+</section> 
+<section id="2">
+<h1>Formulario de feedback de um produto</h1>
+<hr>
+<form action="/submit-feedback" method="post" >
+ <label for="nomecliente">Nome do cliente</label>
+   <input type="text" name="nomecliente" id="nomecliente" required />
+   <br /><br />
+
+<label for="emailcliente">Email do cliente</label>
+<input type="email"
+name="emailcliente"
+id="emailcliente"
+placeholder="email@exemplo.com"
+required
+/>
+<br /><br /> 
+ 
+<label for="avaliaproduto">Avaliação de produto</label>
+<input type="radio" />
+<label for="1">1</label>
+<input type="radio"  name="option" id="1"/>
+<label for="2">2</label>
+<input type="radio"  name="option" id="2"/>
+<label for="3">3</label>
+<input type="radio"  name="option" id="3"/>
+<label for="4">4</label>
+<input type="radio"  name="option" id="4"/>
+<label for="5">5</label>
+<input type="radio"  name="option" id="5"/><br /><br />
+ 
+<label for="comentarios">FALO O QUE PENSA AÍ</label><br />
+<textarea name="comentarios" id="comentarios"></textarea><br />
+<button type="submit">Enviar</button>
+
+
+
+
+
+
+
+<hr />
+</form>
+</section>
+<section id="3">
+ <h2>Preferencias</h2>
+<form action="submit-preferences">
+  <label for="nomecliente">Nome do cliente</label>
+  <input type="text" name="nomecliente" id="nomecliente" required />
+  <br /><br />
+
+<label for="emailnotificacao">Email do Notificação</label>
+  <input type="email"
+  name="emailnotificacao"
+  id="emailnotificacao"
+  placeholder="email@exemplo.com"
+  required
+  />
+  <br /><br /> 
+
+  <label >Selecione as opcões de Notificação</label><br />
+<select name="notificacao" id="notificacao">
+<option value="email">EMAIL</option>
+<option value="sms">SMS</option>
+<option value="push">PUSH(VIA APP)</option>
+ </select>
+ <button type="submit">Enviar dados</button>
+</form>
+</section>
+
+<section id="4">
+<h2>Upload de arquivos</h2>
+<form action="submit-arquivo" method="post">
+    <label for="name">Nome :</label>
+     <input type="text" id="nome" name="nome" required /><br /><br />
+
+    <label for="email">Email: </label>
+     <input 
+      type="email"
+     name="email"
+    id="email"
+   placeholder="email@exemplo.com"
+   required
+   />
+   <br />
+   <br />
+
+<label for="arquivo">Manda o zap: </label>
+<input type="file" name="arquivo" id="arquivo" required><br /><br />
+ 
+
+<button type="submit">Enviar dados</button>
+</form>
+</section>
+<section id="5">
+<h2>Reserva do hotel</h2>
+<form action="submit-reserva" method="post">
+  <form action="submit" method="post">
+    <label for="name">Nome :</label>
+     <input type="text" id="nome" name="nome" required /><br /><br />
+
+     <label for="email">Email: </label>
+     <input 
+      type="email"
+     name="email"
+    id="email"
+   placeholder="email@exemplo.com"
+   required
+   />
+   <br />
+   <br />
+ 
+   <label for="checkin">Daata de checkin: </label>
+    <input type="date" id="checkin" name="checkin" required/><br />
+    <br />
+    <label for="checkin">Daata de checkout: </label>
+    <input type="date" id="checkout" name="checkout" required/><br />
+    <br />
+<label for="quarto">Escolha o tipo de quarto</label>
+<select name="quarto" id="quarto">
+<option value="quarto-simples">Quarto Simples</option>
+<option value="quarto-duplo">Quarto Duplo</option>
+<option value="quarto-triplo">Quarto Triplo</option>
+</select><br /><br />
+<label for="cafe">Café da Manhã?</label>
+<input type="checkbox"><br /><br />
+<button type="submit">Enviar</button>
+
+
+</form>
+</section>
+</body>
+</html>

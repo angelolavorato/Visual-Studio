@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  color: #12d3c3;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d33;
+  padding: 10px 20px;
+  color: white;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-image: url('aaaaa.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+.about-section {
+  display: flex;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.about-section-img {
+  max-width: 50%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+.services-section {
+  padding: 60px 20px;
+  background-color: #f8f8f8;
+}
+
+.service {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #43d555;
+  outline: none;
+}
+
+.form-button {
+  background-color: #21466633;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.footer {
+  background-color: #234222;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 0;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

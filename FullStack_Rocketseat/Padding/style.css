@@ -1,0 +1,11 @@
+div,
+span {
+  width: 200px;
+  height: 100px;
+  border: solid;
+}
+
+.padding {
+ // box-sizing: border-box;
+  padding: 40px; //topo, segundo o direito, terceiro em baixo e o 4º esquerdo
+}

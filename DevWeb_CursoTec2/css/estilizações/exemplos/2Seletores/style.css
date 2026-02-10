@@ -1,0 +1,12 @@
+/* Seletor de tipo */
+p {
+  font-size: 14px;
+} /* Seletor de classe */
+.classe-exemplo {
+  color: green;
+} /* Seletor de
+ID */
+#id-exemplo {
+  font-weight: bold;
+  color: red;
+}

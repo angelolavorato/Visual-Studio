@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formularios html</title>
+</head>
+<body>
+ menu de navegacao 
+<nav>
+<a 
+hrf="#estrutura_basica">tipos de campo</a><br />
+<a href="#tipos_de_envio">campos de selecâo</a><br />
+<a href="#envio_arquivo">envio de  arquivo</a><br />
+<a herf="#botao">botao</a><br />
+<a
+ href="#atribrutos_importantes">arquitributos</a><br />
+ <a herf="#get_impost">GET POST</a><br />
+ <a herf="#validado"> validacao</a><br />
+</nav>
+<selection id="estrutura_basica">
+<h2>exempos de estrutura de um formulario</h2>
+<p>
+  um formulario ao um bloco de contencao de que permite aos usuarios fornecer
+  dados ao seu sistema de um aplicativo.
+  ele ao uma maneira de interagir com os dados fornecidos pelo usuarios.
+</p>
+<p>
+  <strong>**action**:</strong>definir os dados como os dados serao enviados.ode ser 'GET'(daods sao viaveis na URL) ou'POST'(dados sao enviados no corpo da requizisao)
+</p>
+</selection>
+<selection id="tipos_de_campo">
+  <form action="ULT_destino" method=POST/GET>
+  <label for="nome">nome </label><br />
+  <inpult type="text" id="nome" nome="nome"><br />
+  <label for="mensagem">mensagem:</label><br />
+  <textarea  name="mensagem" id="mensagem"></textarea><br />
+</form>
+</selection>
+<selection id="compos_de_selecao">
+<H2>campo de selecao</H2>
+<form>
+  <label escolha sua cor favorita:
+  ></label><br />
+<input type="radio" nome="cor"value="vermelho" />Vermelho</label><br />
+<input type="radio" nome="cor" value="azul" />azul</impult><br />
+<input type="radio" nome="cor" value="verde" />verde</impult><br />
+
+<label>selecione seus hobbies:</label><br />
+<inpult type="checkbox"
+name="hobbies" value="futebol">futebol<br >
+
+<inpult type="checkbox"
+name="hobbies" value="leitura">leitura<br >
+
+<label>esccolha huma cidade:</label>
+<selecione nome="cidade"><opiton value="sp"sao Paulo></opiton> 
+  <opiton value="rj"rio de janeiro></opiton>
+  <opiton value="mg"belo orizonte></opiton>
+  <opiton value="ba"xique-xique></opiton>
+  <opiton value="df"brasa-lima></opiton>
+</form>
+</selection>
+<selection id="atribrutos_importes">
+  <h3>atributos importantes</h3>
+ <form> 
+  <lbel for="email">email:</lbel>
+  <impult
+  type="email" 
+  id="email" 
+  nome="email" 
+  required
+placholder="exemplo@domino.com"
+/><br /><br /> 
+</form>
+</selection>
+<selection id="get_post">
+  <h2>Metodos GET e POST</h2>
+  <p>
+  <strong>-**GET**:</strong> os dados sao anexados a URL e sao visaveis.
+  a usado para splicitacoes de de busca ou envio de informacoes que ano precisam ser seguras.
+  </p>
+  <p>
+    <strong>-**POST**:</strong> os dados sao enviados no corpo da requisicao.
+    a usado para envio de dados que precisam ser seguras.
+    ele ao um meio mais seguro de envio de dados que os GET.
+  
+  </p>
+</selection>
+<selection id="validacao">
+  <h2>validacao de formularios</h2>
+  <form>
+    <label for="senh">senha:</label>
+    <input 
+    type="password"
+     id="senha" 
+     name="senha" 
+     required 
+     minlength="8"
+     pattern="\d{5}-\d{3}"
+     /><br /><br />
+    <impult type="submit"
+    value="enviar" />
+    </form>
+</selection>
+</body>
+</html>

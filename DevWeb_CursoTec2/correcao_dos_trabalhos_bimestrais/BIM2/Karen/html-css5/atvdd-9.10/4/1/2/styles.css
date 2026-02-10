@@ -1,0 +1,10 @@
+* {
+    margin: 12px;
+  }
+  .texto-normal {
+    font-size: 1em;
+  }
+  
+  .texto-maior {
+    font-size: 2em;
+  }

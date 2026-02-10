@@ -1,0 +1,9 @@
+p {
+  font-size: 25px;
+  font-family: 'Brush Script MT', cursive;
+  font-weight: bolder;
+  font-style: italic;
+  color: #16227b;
+  line-height: 4; /*EXERCICIO 2*/
+  letter-spacing: 10px; /*EXERCICIO 2*/
+}

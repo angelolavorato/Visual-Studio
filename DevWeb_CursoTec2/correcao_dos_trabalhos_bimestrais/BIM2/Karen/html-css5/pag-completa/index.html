@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Exercício página web completa utilizando HTML e CSS</title>
+    <link rel="shortcut icon" href="html-css5/imgs" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--CABEÇALHO-->
+    <header>
+      <div class="logo">
+        <h1>Sanrio Brasil</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Personagens</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--BANNER-->
+    <section class="banner">
+      <div class="banner-content">
+        <h2>Boas Vindas</h2>
+        <p>
+          Bem-vindo a<strong> Sanrio Brasil. </strong>Sanrio® é uma marca life
+          style global mais conhecida pela personagem Hello Kitty®, que foi
+          criada em 1974 e detentora de muitas outras marcas de personagens
+          amadas, como My Melody™, Kuromi™, LittleTwinStars™, Cinnamoroll™,
+          Pompompurin™, gudetama™, Aggretsuko™, Chococat™, Badtz-Maru™ e
+          Keroppi™.
+        </p>
+        <button>Saiba Mais</button>
+      </div>
+    </section>
+    <!--SOBRE NÓS-->
+    <section id="about" class="about">
+      <div class="about-content">
+        <img
+          src="ffriends.png"
+          alt="Imagem contendo vários personagens da Sanrio"
+        />
+        <div>
+          <h2>Sobre a Sanrio</h2>
+          <p>
+            A<strong> Sanrio</strong> foi fundada com base na filosofia de que
+            um pequeno presente pode trazer felicidade e amizade às pessoas de
+            todas as idades. Desde 1960, esta filosofia tem servido de
+            inspiração para oferecer produtos, serviços e atividades que
+            promovam a comunicação e inspirem experiências únicas aos
+            consumidores em todo o mundo. Hoje, os negócios da
+            <strong>Sanrio</strong> se estendem à indústria do entretenimento
+            com várias séries de conteúdos, games e parques temáticos.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--SERVIÇOS-->
+
+    <section id="persona" class="persona">
+      <h2>Hello Kitty and Friends</h2>
+      <p>
+        Hello Kitty and Friends é uma websérie de animação americana-brasileira
+        criada por Shaene Siders e pela Sanrio para os canais oficiais do
+        YouTube da Hello Kitty. Possui a animação feita pelo estúdio brasileiro
+        Split Studio. A série é a terceira websérie para YouTube baseada na
+        Hello Kitty, sucedendo O Mundo da Hello Kitty e Hello Kitty Fun. A
+        animação é uma série crossover envolvendo vários personagens da Sanrio,
+        tendo sido feita para celebrar os 60 anos da empresa. Estreou sua
+        primeira temporada em 26 de outubro 2020 originalmente em inglês, tendo
+        sua estreia no Brasil em 2021 primeiramente no app PlayKids e depois no
+        canal oficial da Hello Kitty no YouTube. Atualmente conta com 7
+        temporadas.
+      </p>
+      <div class="persona">
+        <div class="persona">
+          <h3>Hello Kitty</h3>
+          <p>
+            A Hello Kitty é uma garota feliz e divertida, que adora espalhar
+            alegria pelo mundo. Ela mora com seus pais e sua irmã gêmea,
+            Mimmy,em Londres, na Inglaterra. Seu lema é: “Muitos amigos nunca
+            são demais!” Por isso, ela está sempre cercada de amigos e adora
+            fazer novas amizades.
+          </p>
+          <img
+            src="Hello-Kitty-PNG-Pic.png"
+            alt="personagem Hello Kitty"
+            width="200px"
+          />
+        </div>
+        <div class="persona">
+          <h3>My Melody</h3>
+          <p>
+            A My Melody nasceu na floresta de Mary Land. Ela é super legal e faz
+            amizade facilmente. Sua marca registrada é um lindo capuz, que sua
+            avó costurou especialmente para ela.
+          </p>
+          <img
+            src="my-melody-png-473-download-4423.png"
+            alt="personagem My Melody"
+            width="200px"
+          />
+        </div>
+        <div class="persona-item">
+          <h3>Kuromi</h3>
+          <p>
+            Kuromi é muito bagunceira e sempre causa confusões. Por trás de sua
+            aparência radical, ela é super feminina. Adora escrever em seu
+            diário e ler romances. Sua cor preferida é a preta. Ela é amiga da
+            My Melody, mas encara essa amizade com uma certa competição.
+          </p>
+          <img src="kuromi_dehye92-fullview.png" alt="personagem Kuromi" />
+        </div>
+      </div>
+    </section>
+    <!--FORMULÁRIO DE CONTATO-->
+    <section id="contact" class="contact">
+      <h2>Contato</h2>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="nome" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <!--RODAPÉ-->
+    <footer>
+      <p>&copy;2024 SANRIO CO., LTD. Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>

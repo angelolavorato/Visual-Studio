@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+.absolute-box {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  background-color: lightgreen;
+}

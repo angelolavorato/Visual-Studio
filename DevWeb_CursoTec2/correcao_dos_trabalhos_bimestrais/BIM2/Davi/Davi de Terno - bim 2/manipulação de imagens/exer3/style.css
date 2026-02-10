@@ -1,0 +1,5 @@
+.imagem-estilizada {
+  border: 5px solid black;
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 15px;
+}

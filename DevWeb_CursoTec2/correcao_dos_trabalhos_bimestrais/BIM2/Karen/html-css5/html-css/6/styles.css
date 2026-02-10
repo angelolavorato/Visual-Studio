@@ -1,0 +1,19 @@
+.body
+#mySVG {
+  fill: red;
+  stroke: black;
+  stroke-width: 3;
+}
+#mySVG:hover circle {
+  fill: yellow;
+}
+#SVGRepo_iconCarrier {
+  fill: blue;
+}
+.backgroundSVG {
+  border: 1px solid;
+
+  max-width: 150px;
+  max-height: 150px;
+  background-color: black;
+}

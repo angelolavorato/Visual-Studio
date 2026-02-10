@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Exercício página web completa utilizando HTML e CSS</title>
+    <link
+      rel="shortcut icon"
+      href="/DevWeb_CursoTec2/Exercicio_html+css/Resolucao/assets/fav2.png6"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--CABEÇALHO-->
+    <header>
+      <div class="logo">
+        <h1>Posto Cemppiac Sugpiame</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--BANNER-->
+    <section class="banner">
+      <div class="banner-content">
+        <h2>Boas Vindas</h2>
+        <p>
+          Bem-vindo ao Posto Cemppiac Sugpiame! Estamos aqui para garantir que
+          você e seu veículo estejam sempre prontos para a estrada. Aproveite
+          nossos serviços rápidos e eficientes, e conte com nossa equipe
+          dedicada para um atendimento amigável e profissional. Sua satisfação é
+          a nossa prioridade!
+        </p>
+        <button>Saiba Mais</button>
+      </div>
+    </section>
+    <!--SOBRE NÓS-->
+    <section id="about" class="about">
+      <div class="about-content">
+        <img
+          src="/DevWeb_CursoTec2/Exercicio_html+css/Resolucao/assets/about.png"
+          alt="Imagem contendo várias pessoas em roda"
+        />
+        <div>
+          <h2>Sobre Nós</h2>
+          <p>
+            Bem-vindo ao<strong> Posto Cemppiac Sugpiame</strong>, onde a sua
+            satisfação é a nossa prioridade. Localizado em Lá Ele, nosso posto
+            oferece uma ampla gama de serviços para garantir que você e seu
+            veículo estejam sempre prontos para a estrada. Desde abastecimento
+            rápido e eficiente até a troca de óleo e uma loja de conveniência
+            bem abastecida, estamos aqui para atender todas as suas
+            necessidades. Nossa equipe dedicada está comprometida em fornecer um
+            atendimento amigável e profissional, garantindo que cada visita ao
+            nosso posto seja uma experiência agradável. No
+            <strong> Posto Cemppiac Sugpiame</strong> , valorizamos a confiança
+            e a lealdade de nossos clientes. Por isso, trabalhamos continuamente
+            para oferecer produtos de alta qualidade e serviços excepcionais.
+            Venha nos visitar e descubra por que somos a escolha preferida dos
+            motoristas em Lá Ele.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--SERVIÇOS-->
+    <section id="services" class="services">
+      <h2>Serviços</h2>
+      <p>
+        No Posto Cemppiac Sugpiame, oferecemos tudo o que você precisa para
+        manter seu veículo em perfeito estado. Desde abastecimento rápido e
+        eficiente até a troca de óleo e uma loja de conveniência completa. Conte
+        com nossa equipe dedicada para um atendimento excepcional e serviços de
+        alta qualidade. Venha nos visitar e descubra a diferença!
+      </p>
+      <div class="service-items">
+        <div class="service-item">
+          <h3>Abastecimento</h3>
+          <p>
+            Abasteça seu carro! No Posto Cemppiac Sugpiame, oferecemos
+            combustíveis de alta qualidade para garantir o melhor desempenho do
+            seu veículo. Nossa equipe está pronta para um atendimento rápido e
+            eficiente, assegurando uma experiência conveniente e segura. Venha
+            nos visitar e veja a diferença!
+          </p>
+          <img
+            src="/DevWeb_CursoTec2/Exercicio_html+css/Resolucao/assets/abastecendo.jpg"
+            alt="Imagem de um carro sendo abastecido"
+          />
+        </div>
+        <div class="service-item">
+          <h3>Troca de óleo</h3>
+          <p>
+            No Posto Cemppiac Sugpiame, oferecemos serviços de troca de óleo
+            rápidos e eficientes para manter seu veículo funcionando
+            perfeitamente. Nossa equipe especializada utiliza produtos de alta
+            qualidade para garantir a longevidade do motor do seu carro. Venha
+            nos visitar e experimente a diferença!
+          </p>
+          <img
+            src="/DevWeb_CursoTec2/Exercicio_html+css/Resolucao/assets/oleo.jfif"
+            alt=""
+          />
+        </div>
+        <div class="service-item">
+          <h3>Conveniência</h3>
+          <p>
+            No Posto Cemppiac Sugpiame, nossa loja de conveniência oferece uma
+            ampla variedade de lanches, bebidas e suprimentos para tornar sua
+            viagem ainda mais confortável. Nossa equipe está pronta para
+            atendê-lo com rapidez e eficiência. Venha nos visitar e aproveite a
+            conveniência que oferecemos!
+          </p>
+          <img
+            src="/DevWeb_CursoTec2/Exercicio_html+css/Resolucao/assets/conveniencia.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!--FORMULÁRIO DE CONTATO-->
+    <section id="contact" class="contact">
+      <h2>Contato</h2>
+      <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="nome" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <!--RODAPÉ-->
+    <footer>
+      <p>&copy;2024; Posto Cemppiac Sugpiame. Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>

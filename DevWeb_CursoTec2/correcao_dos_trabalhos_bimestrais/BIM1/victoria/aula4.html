@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 a 5 - Formulários</title>
+</head>
+<body>
+    <h1>1.Cadastro de Usuário</h1>
+
+    <form>
+        
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        
+        <label for="senha">Senha (mínimo 8 caracteres):</label>
+        <input type="password" id="senha" name="senha" minlength="8" required>
+        <br><br>
+
+        
+        <label for="confirma_senha">Confirmar Senha:</label>
+        <input type="password" id="confirma_senha" name="confirma_senha" minlength="8" required>
+        <br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <section id="feedback">
+        <h1>2.Feedback de Produto</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="nota">Nota (1 a 5):</label>
+            <input type="number" id="nota" name="nota" min="1" max="5" required><br><br>
+
+            <label for="comentario">Comentário:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    
+        
+            <h2>3.Preferências de Notificação</h2>
+            <form action="/submit-preferences" method="post">
+                
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <p>Preferências de notificação:</p>
+                    <input type="checkbox" id="email-notifications" name="notifications" value="email">
+                    <label for="email-notifications">Notificações por email</label><br>
+                    <input type="checkbox" id="sms-notifications" name="notifications" value="sms">
+                    <label for="sms-notifications">Notificações por SMS</label><br>
+                    <input type="checkbox" id="push-notifications" name="notifications" value="push">
+                    <label for="push-notifications">Notificações por Push (via app)</label>
+               
+                    <button type="submit">Enviar Preferências</button>
+                
+            </form>
+
+            
+    <h1>4.Formulário de Upload de Arquivo</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="nome">Nome do Usuário:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="arquivo">Escolha um arquivo:</label>
+        <input type="file" id="arquivo" name="arquivo" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+
+    <h1>5.Formulário de Reserva de Hotel</h1>
+    <form action="/reservar" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="checkin">Data de Check-in:</label>
+        <input type="date" id="checkin" name="checkin" required><br><br>
+
+        <label for="checkout">Data de Check-out:</label>
+        <input type="date" id="checkout" name="checkout" required><br><br>
+
+        <label for="tipo_quarto">Tipo de Quarto:</label>
+        <select id="tipo_quarto" name="tipo_quarto" required>
+            <option value="simples">Simples</option>
+            <option value="duplo">Duplo</option>
+            <option value="suite">Suíte</option>
+        </select><br><br>
+
+        <label for="cafe_manha">Solicitar Café da Manhã:</label>
+        <input type="checkbox" id="cafe_manha" name="cafe_manha"><br><br>
+
+        <input type="submit" value="Reservar">
+    </form>
+
+    <footer>
+        <p>© 2024 Desenvolvido por Victória Raissa De Oliveira Batista</p>
+    </footer>
+
+     
+</body>
+</html>

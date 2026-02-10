@@ -1,0 +1,169 @@
+<!--TO ENTENDENDO NADA DISSO AQUI-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios 1-8</title>
+</head>
+<body>
+    <section id="1-Blog">
+        <h1>Exercício 1: Página de Blog Simples</h1>
+      <article>
+        <h2>Estudo Bíblico</h2>
+
+        <time datetime="2024-09-18">Quarta-Feira 18 de setembro de 2024</time>
+    </section> 
+        <p>
+          O senhor é um professor maravilhoso das Escrituras. Eu queria 
+          conhecer a Bíblia tão bem quanto o senhor. O dr...
+        </p>
+        <footer>
+          <a href="#saiba_mais">Saiba Mais</a>
+        </footer>
+      </article>
+      <article>
+        <h2>Amizade</h2>
+        <time datetime="2024-09-18">Quarta-Feira 18 de setembro de 2024</time>
+
+        <p>
+          A amizade é uma grande beção de Deus. O bom amigo partilha momentos
+          bons e está sempr pronto para ajudar nas hora difícies. Juntos, os
+          amigos são mais fortes. devemos sempre valorizar uma verdadeira...
+        </p>
+        <footer>
+          <a href="#saibamais">Saiba Mais</a>
+        </footer>
+      </article>
+      <article>
+        <h2>Tocar de ouvido</h2>
+        <time datetime="2024-09-18">Quarta-Feira 18 de setembro de 2024</time>
+
+        <p>
+          Tocar um instrumento musical de ouvido é uma habilidade fascinante e 
+          valiosa que permite aos músicos explorar a música de maneira mais 
+          intuitiva e criativa. Este processo requer tempo, dedicação e uma 
+          boa compreensão da teoria musical. Esta habilidade envolve a...
+        </p>
+        <footer>
+          <a href="#saibamais">Saiba Mais</a>
+        </footer>
+      </article>
+    </section>
+    <section id="2-Links_uteis">
+      <h1>Exercício 2: Linkando para Sites Externos</h1>
+      <ul>
+        <li>
+          <a href="https:www.opera.com/">opera</a>
+        </li>
+        <li>
+          <a href="https://www.bible.com/">bible</a>
+        </li>
+        <li>
+          <a href="https://abbaplay.com.br/">abbaplay</a>
+        </li>
+      </ul>
+    </section>
+    <section id="3-Mapa">
+      <h1>Exercício 3: Embedding de um Mapa</h1>
+      <iframe
+        src="https://www.google.com.br/maps/place/Associa%C3%A7%C3%A3o+Atl%C3%A9tica+Abuarip/@-21.2710162,-43.0189084,17z/data=!3m1!4b1!4m6!3m5!1s0xa2e4cc82b83c5b:0xf1621e1188065d8d!8m2!3d-21.2710162!4d-43.0163335!16s%2Fg%2F1ptxb01fw?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+        width="300"
+        height="225"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section id="4-Acoes">
+      <h1>Exercício 4: Criação de Botões</h1>
+      <button id="salvar">Salvar</button><br />
+      <button id="cancelar">Cancelar</button><br />
+      <button id="excluir">Excluir</button><br />
+
+</section>
+    <section id="5-Legenda">
+      <h1>Exercício 5: Criação de uma Imagem com Legenda</h1>
+      <img
+        src="/Imagens/Imagem4heart.png.png"
+        alt="Imagem de um coração vermelho em um fundo escuro"
+      />
+      <figcaption>coraçao</figcaption>
+
+</section>
+    <section id="6-Preferencias">
+      <h1>Exercício 6: Formulário com Checkboxes e Radiobuttons</h1>
+      <h2>Preferencias</h2>
+      <form>
+        <input
+          type="checkbox"
+          id="Newsletter"
+          name="Newsletter"
+          value="Newsletter"
+        />
+        <label for="Newsletter"> Receber Newsletter </label><br />
+        <input
+          type="checkbox"
+          id="promocoes"
+          name="promocoes"
+          value="promocoes"
+        />
+        <label for="promocoes"> Participar de Promoções</label><br />
+        <input
+          type="checkbox"
+          id="notificacoes"
+          name="notificacoes"
+          value="notificacoes"
+        />
+        <label for="notificacoes"> Receber Notificações</label><br />
+
+        <h2>Frequência de email</h2>
+        <input type="radio" name="frequencia" value="diario" />
+        <label>Diário</label><br />
+        <input type="radio" name="frequencia" value="semanal" />
+        <label>Semanal</label><br />
+
+        <input type="radio" name="frequencia" value="mensal" />
+        <label>Mensal</label>
+      </form>
+    </section>
+      <section>
+        <h2>Tabela Avançada</h2>
+        <table border="1">
+            <tr>
+                <th colspan="2">Produto</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Notebook</td>
+                <td>Modelo A</td>
+                <td>R$ 3.000,00</td>
+            </tr>
+            <tr>
+                <td>Modelo B</td>
+                <td>R$ 4.500,00</td>
+            </tr>
+            <tr>
+              <td colspan="2">Smartphone</td>
+              <td>R$ 2.000,00</td>
+          </tr>
+      </table>
+  </section>
+  <section id="8-Feedback">
+    <h1>Exercício 8: Criação de um Formulário de Feedback</h1>
+    <h2>Feedback</h2>
+    <form action="/submit" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" /><br />
+      <label for="Email">Email:</label>
+      <input type="text" id="email" name="email" />
+      <br />
+      <br />
+      <input type="number" id="quantity" name="quantity" min="1" max="5" />
+      <input type="submit" value="Enviar" />
+    </form>
+  </section>
+</body>
+</html>

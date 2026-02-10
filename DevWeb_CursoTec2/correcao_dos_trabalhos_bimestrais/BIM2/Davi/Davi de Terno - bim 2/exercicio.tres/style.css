@@ -1,0 +1,200 @@
+h1 {
+  color: pink;
+}
+h2 {
+  color: blue;
+  font-size: 72px;
+}
+h3 {
+  weight: bold;
+  color: red;
+  font-style: italic;
+}
+#paragrafo2 {
+  font-size: 35px;
+  color: blue;
+  text-align: center;
+  font-weight: bolder;
+}
+.botao-classe {
+  background-color: red;
+}
+#botao-id {
+  background-color: blue;
+}
+button {
+  background-color: green;
+}
+li {
+  color: #ff0f0f;
+  font-weight: bolder;
+}
+li:last-child {
+  color: #00ffff;
+}
+* {
+  margin: 12px;
+}
+p {
+  color: green;
+}
+
+p {
+  color: blue;
+}
+.classe {
+  text-align: justify;
+  color: red;
+}
+.ID {
+  text-transform: uppercase;
+  color: blue;
+}
+.content {
+  border: 10px solid;
+  width: 50%;
+  height: 200px;
+  padding: 1.5rem;
+  background-color: #c8a2c8;
+}
+
+* {
+  margin: 32px;
+}
+.texto-normal {
+  font-size: 3cm;
+}
+.texto-maior {
+  font-size: 2cm;
+}
+.caixa-um {
+  border: 2px solid;
+  padding: 10px;
+  margin: 11px;
+}
+.caixa-dois {
+  border: 4px red solid;
+  padding: 12px;
+  margin: 15px;
+}
+.caixa-tres {
+  border: 6px blue solid;
+  padding: 14px;
+  margin: 15px;
+}
+p {
+  font-size: 12px;
+}
+.border-box {
+  overflow: none;
+  text-align: center;
+  border: 2px solid;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+* {
+  margin: 30px;
+}
+.pai {
+  border: 4px solid;
+  orange;
+  width: 300px;
+  height: 300px;
+position: relative;
+}
+.filho {
+  
+  border: 5px solid;
+position: absolute;
+background-color: navy;
+top: 50px;
+left:10px;
+padding: 10px;
+width: 200px;
+height: 100px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.box{
+border: 2px solid;
+padding: 20px;
+}
+#caixa1 {
+  background-color: lightblue;
+}
+
+#caixa2 {
+  background-color: pink;
+}
+
+#caixa3 {
+  background-color: yellow;
+}
+p.{
+  font-size: 25px;
+  font-family: 'Brush Script Mt',cursive;
+  font-weight: bolder;
+  font-style: italic;
+  color: blue;
+  line-height: 1.5;
+  letter-spacing: 10px;
+}
+.bloco1 {
+  background-color: lightblue;
+  width: 100px;
+  height: 100px;
+}
+.bloco2 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+.bloco3 {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(to right, red, yellow);
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+
+}
+.img_fundo {
+  background-image: url("imgs/image.png");
+  backgroung-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.transicao {
+  border-radius: 100px;
+ background: blue;
+  padding: 34px;
+  transition: background-color 1s ease;
+}
+.transicao:hover {
+  transition: background-color 1s ease;
+background:  rgba(174,29,253,1);
+}
+
+.circulo {
+  padding: 100px;
+  border-radius: 520px;
+  width: 50px;
+  height: 50px;
+background-color: yellow;
+  position: relative;
+  animation: mover 5s infinite;
+ 
+ }
+ @keyframes mover {
+  0% {
+   left: 0px;
+  }
+  100% {
+   left: 500px
+  }
+ }

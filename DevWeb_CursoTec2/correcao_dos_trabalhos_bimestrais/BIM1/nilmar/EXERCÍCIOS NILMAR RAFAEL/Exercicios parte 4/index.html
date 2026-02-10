@@ -1,0 +1,180 @@
+<!--VISTO-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h3><a href="#1">Exercicios 1</a></h3>
+      <h3><a href="#2">Exercicios 2</a></h3>
+      <h3><a href="#3">Exercicios 3</a></h3>
+      <h3><a href="#4">Exercicios 4</a></h3>
+      <h3><a href="#5">Exercicios 5</a></h3>
+    </nav>
+    <section id="1">
+      <h1>Cadastro</h1>
+      <form action="cadastro" method="post">
+        <label for="name">Nome</label><br />
+        <input
+          name="Nome"
+          id="Nome"
+          placeholder="Digite seu nome "
+          type="text"
+        /><br />
+        <label for="E-mail">E-mail</label><br />
+        <input
+          name="E-mail"
+          id="E-mail"
+          placeholder="Digite seu e-mail"
+          required
+          type="email"
+        /><br />
+        <label for="Senha">Senha</label><br />
+        <input
+          name="Senha"
+          id="Senha"
+          placeholder="Digite sua senha"
+          required
+          minlength="8"
+          type="password"
+        /><br />
+        <label for="Senha">Confirme a senha</label><br />
+        <input
+          name="SenhaC"
+          id="SenhaC"
+          placeholder="Confirme sua senha"
+          required
+          minlength="8"
+          type="password"
+        /><br />
+        <input type="submit" />
+      </form>
+    </section>
+    <section id="2">
+      <h1>Feedback</h1>
+      <form action="feedback" method="post">
+        <label for="name">Nome</label><br />
+        <input
+          name="Nome"
+          id="Nome"
+          placeholder="Digite seu nome "
+          type="text"
+        /><br />
+        <label for="E-mail">E-mail</label><br />
+        <input
+          name="E-mail"
+          id="E-mail"
+          placeholder="Digite seu e-mail"
+          required
+          type="email"
+        /><br />
+        <label for="nota">Nota do produto</label><br />
+        <select name="nota" id="nota">
+          <br />
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option></select
+        ><br />
+        <label for="feedback">Comentario</label><br />
+        <textarea
+          name="feedback"
+          id="feedback"
+          placeholder="Deixe seu comentario"
+        ></textarea
+        ><br />
+        <input type="submit" /><br />
+      </form>
+    </section>
+    <section id="3">
+      <h1>Formulario</h1>
+      <form action="formulario" method="post">
+        <label for="name">Nome</label><br />
+        <input
+          name="Nome"
+          id="Nome"
+          placeholder="Digite seu nome "
+          type="text"
+        /><br />
+        <label for="E-mail">E-mail</label><br />
+        <input
+          name="E-mail"
+          id="E-mail"
+          placeholder="Digite seu e-mail"
+          required
+          type="email"
+        /><br />
+        <label for="notificacao"
+          >Selecione onde você deseja receber notificções</label
+        ><br />
+        <select name="notificacao" id="notificacao">
+          <br />
+          <option value="SMS">SMS</option>
+          <option value="E-mail">e-mail</option>
+          <option value="Push">Push</option></select
+        ><br />
+        <input type="submit" /><br />
+      </form>
+    </section>
+    <section id="4">
+      <h1>Envio de arquivo</h1>
+      <form action="arquivo" method="post">
+        <label for="name">Nome</label><br />
+        <input
+          name="Nome"
+          id="Nome"
+          placeholder="Digite seu nome"
+          type="text"
+        /><br />
+        <label for="E-mail">E-mail</label><br />
+        <input
+          name="E-mail"
+          id="E-mail"
+          placeholder="Digite seu e-mail"
+          required
+          type="email"
+        /><br />
+        <label for="arquivo">Envie um arquivo</label><br />
+        <input required type="file" name="arquivo" id="arquivo" /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <section id="5">
+      <h1>Nil's Hotel</h1>
+      <form action="hotel"></form>
+      <label for="name">Nome</label><br />
+      <input
+        name="Nome"
+        id="Nome"
+        placeholder="Digite seu nome "
+        type="text"
+      /><br />
+      <label for="E-mail">E-mail</label><br />
+      <input
+        name="E-mail"
+        id="E-mail"
+        placeholder="Digite seu e-mail"
+        required
+        type="email"
+      /><br />
+      <label for="checkin">Data de Check-in</label><br />
+      <input required name="checkin" id="checkin" type="date" /><br />
+      <label for="checkout">Data de Check-out</label><br />
+      <input required name="checkout" id="checkout" type="date" /><br />
+      <label for="cafe">Solicitar Café?</label><br />
+      <select name="cafe" id="cafe">
+        <br />
+        <option value="sim">Sim</option>
+        <br />
+        <option value="nao">Não</option>
+        <br /></select
+      ><br />
+      <input type="submit" /><br />
+    </section>
+  </body>
+</html>

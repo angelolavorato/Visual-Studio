@@ -1,0 +1,26 @@
+.card {
+  border: 1px solid;
+  padding: 50px;
+  margin: 20px;
+  background-color: orange;
+  text-align: justify;
+  border-radius: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+}
+h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.card2 {
+  border: 1px solid;
+  padding: 50px;
+  margin: 20px;
+  background-color: blue;
+  text-align: justify;
+  border-radius: 20px;
+}

@@ -1,0 +1,319 @@
+body {
+  dispay: flex;
+  padding: 0px 0px;
+}
+.exercicio {
+  text-align: center;
+  position: center;
+  color: yellow;
+  font-size: 34px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+.t1 {
+  font-size: 24px;
+  color: green;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.t2 {
+  font-size: 34px;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.t3 {
+  font-size: 20px;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.p2 {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.b1 {
+  background-color: red;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.b2 {
+  background-color: green;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.b3 {
+  background-color: blue;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.i1 {
+  font-size: 24px;
+  color: salmon;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.i2 {
+  font-size: 24px;
+  color: lightblue;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.i3 {
+  font-size: 24px;
+  color: lightgreen;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.i4 {
+  font-size: 24px;
+  color: lightgray;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.i5 {
+  font-size: 24px;
+  color: lightpink;
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.p3 {
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  color: salmon !important;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.p4 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  color: lightblue;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.pid4 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  color: lightgreen;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.div4 {
+  align-items: center;
+  background-color: lightblue;
+  width: 50%;
+  height: 110px;
+  padding: 3rem;
+}
+.p5 {
+  font-size: 1.2em;
+  color: yellow;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #000;
+}
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.boxp1 {
+  font-size: 2.1em;
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #000;
+}
+.box2 {
+  box-sizing: border-box;
+  background-color: lightgray;
+  border: 5px solid;
+  color: black;
+  padding: 19px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.bloco1 {
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.bloco2 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 35%;
+  left: 28%;
+}
+.blocot1 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+  color: salmon;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #000;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p6 {
+  font-size: 18px;
+  color: yellow;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: #000;
+  font-family: 'luminari', fantasy;
+  line-height: 18px;
+  letter-spacing: 5px;
+}
+.p7 {
+  width: 44px;
+  height: 20px;
+  background-color: red;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.p8 {
+  width: 44px;
+  height: 20px;
+  background-color: green;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.p9 {
+  width: 44px;
+  height: 20px;
+  border: 5px solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgb(5, 2, 57);
+  background: linear-gradient(
+    39deg,
+    rgba(5, 2, 57, 1) 15%,
+    rgba(19, 6, 154, 1) 44%,
+    rgba(1, 39, 255, 1) 77%,
+    rgba(0, 133, 226, 1) 94%
+  );
+}
+.palio {
+  border: 5px solid;
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+}
+.button {
+  background-size: 190px 190px;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: red solid 8px;
+  background-color: red;
+}
+.button:hover {
+  background-size: 190px 190px;
+  background-image: url('uno.jpg');
+  border-color: green;
+  background-color: green;
+}
+.circu {
+  border-radius: 520px;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  animation: mover 4s infinite;
+  position: relative;
+}
+@keyframes mover {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 250px;
+  }
+}

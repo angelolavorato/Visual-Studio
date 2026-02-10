@@ -1,0 +1,174 @@
+/* Sintaxe Básica do CSS */
+h1 {
+  color: red;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-style: italic;
+}
+.external-style {
+  color: green;
+}
+
+/* Seletores */
+button.btn-class {
+  background-color: yellow;
+}
+button#btn-id {
+  background-color: orange;
+}
+button[type='button'] {
+  background-color: pink;
+}
+
+ul li:first-child {
+  font-weight: bold;
+}
+ul li:nth-child(odd) {
+  color: blue;
+}
+ul * {
+  font-family: Arial, sans-serif;
+}
+
+/* Especificidade e Cascata */
+.class1 {
+  color: purple;
+}
+.class2 {
+  color: teal;
+}
+#specific {
+  color: navy;
+}
+.class3 {
+  color: coral;
+}
+
+/* Unidades de Medida */
+.box1 {
+  width: 50%;
+  height: 200px;
+  padding: 2rem;
+  background-color: lightgray;
+}
+.box2 p {
+  font-size: 1.5em;
+}
+
+/* Box Model */
+.box3 {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 20px;
+}
+.box4 {
+  border: 4px dashed blue;
+  padding: 20px;
+  margin: 10px;
+}
+.box5 {
+  border: 6px dotted green;
+  padding: 30px;
+  margin: 5px;
+}
+.box6 {
+  width: 200px;
+  height: 200px;
+  border: 10px solid red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Posicionamento */
+.relative-container {
+  position: relative;
+  height: 300px;
+  border: 1px solid black;
+}
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: lightblue;
+  padding: 10px;
+}
+.absolute-box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+}
+.flex-box {
+  flex: 1;
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Tipografia */
+.custom-font {
+  font-family: 'Courier New', Courier, monospace;
+}
+.spaced-text {
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+
+/* Cores e Fundos */
+.bg-block {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.bg1 {
+  background-color: crimson;
+}
+.bg2 {
+  background-color: skyblue;
+}
+.gradient-bg {
+  background: linear-gradient(to right, purple, orange);
+}
+.bg-image {
+  width: 200px;
+  height: 200px;
+  background-image: url('example.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Animações */
+.transition-btn {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.transition-btn:hover {
+  background-color: darkgray;
+}
+
+.circle-animation {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  animation: move-circle 3s infinite linear;
+}
+@keyframes move-circle {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}

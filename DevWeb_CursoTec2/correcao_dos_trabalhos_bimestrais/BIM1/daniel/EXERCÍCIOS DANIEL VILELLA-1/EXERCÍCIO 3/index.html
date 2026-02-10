@@ -1,0 +1,224 @@
+<!--VISTO-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/assets/logo.jpg" type="image/x-icon" />
+    <title>DN Design</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#tabela">Tabela</a>
+      <a href="#sericos">Nossos Serviços</a>
+      <a href="#nossa-equipe">Nossa Equipe</a>
+      <a href="#contato">Contato</a>
+      <a href="#senha">Cadastro</a>
+    </nav>
+
+    <header class="logo">
+      <img
+        src="/correcao_dos_trabalhos_bimestrais/daniel/EXERCÍCIOS DANIEL VILELLA-1/assets/logo.jpg"
+        alt="logo"
+        width="200px"
+        height="200px"
+      />
+      <div>
+        <h1>DN Design</h1>
+        <h3>Colocando suas ideias em prática</h3>
+      </div>
+    </header>
+
+    <section id="servico">
+      <h2>Lista Serviços</h2>
+      <ul>
+        Logos
+      </ul>
+      <ol>
+        IDE (IDENTIDADE VISUAL)
+      </ol>
+      <ul>
+        Posts
+      </ul>
+      <ul>
+        Storys
+      </ul>
+    </section>
+
+    <section>
+      <h2>Video Tutorial</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/n98RrQEkg9c?si=aaBwZh7ajtlhLLZR"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section class="tabela-1" id="tabela">
+      <caption>
+        <h1>HORÁRIO DAS AULAS CURSO DE INFORMÁTICA APLICADA</h1>
+      </caption>
+      <table style="width: 100%">
+        <tr style="height: 50px">
+          <th>HORÁRIO</th>
+          <th>SEGUNDA</th>
+          <th>TERÇA</th>
+          <th>QUARTA</th>
+          <th>QUINTA</th>
+          <th>SEXTA</th>
+        </tr>
+        <tr>
+          <td>18:10-19:00</td>
+          <td>S. O.</td>
+          <td>SEG. SIST.</td>
+          <td>DEV. WEB</td>
+          <td>S. O.</td>
+          <td>REDES</td>
+        </tr>
+        <tr>
+          <td>19:00-19:50</td>
+          <td>SEG. SIST.</td>
+          <td>DEV. WEB</td>
+          <td>DEV. WEB</td>
+          <td>REDES</td>
+          <td>REDES</td>
+        </tr>
+        <tr>
+          <td>19:50-20:40</td>
+          <td>S. O.</td>
+          <td>LING. PROG.</td>
+          <td>DEV. WEB</td>
+          <td>DEV. WEB</td>
+          <td>REDES</td>
+        </tr>
+        <tr>
+          <td>20:50-21:40</td>
+          <td>SEG. SIST.</td>
+          <td>LING. PROG.</td>
+          <td>LING. PROG.</td>
+          <td>MONT. MANUT.</td>
+          <td>REDES</td>
+        </tr>
+        <tr>
+          <td>21:40-22:30</td>
+          <td>SEG. INF.</td>
+          <td>LING. PROG.</td>
+          <td>LING. PROG.</td>
+          <td>MONT. MANUT.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="form" id="contato">
+      <h2>Contato</h2>
+      <form action="/submit" method="post">
+        <label for="name"> Nome: </label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          placeholder="Joãozinho"
+        />
+
+        <label for="Telefone"> Telefone: </label>
+        <input
+          type="tel"
+          id="Telefone"
+          name="Telefone"
+          required
+          placeholder="(00) 99988-8776"
+        />
+        <input type="submit" value="Enviar" required />
+      </form>
+    </section>
+
+    <section id="nossa-equipe">
+      <h2>Nossa Equipe</h2>
+      <figure>
+        <img
+          id="minha-imagem"
+          src="/correcao_dos_trabalhos_bimestrais/daniel/EXERCÍCIOS DANIEL VILELLA-1/assets/BIBOLA.jpg"
+          alt=""
+          width="300px"
+          height="300px"
+        />
+        <figcaption>
+          <p>BIBOLA</p>
+          <p>Melhor Funcionário do mês</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="senha">
+      <form>
+        <label for="username">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          placeholder="Joãozinho"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          required
+          placeholder="meuemail@dominio.com"
+        /><br /><br />
+
+        <label for="pwd">Senha:</label>
+        <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          required
+          placeholder="Senha123@"
+          minlength="8"
+          pattern="d(5)"
+        /><br /><br />
+
+        <label for="pwd">Confirmar Senha:</label>
+        <input
+          type="confirm-password"
+          id="confirmacao-senha"
+          name="senha"
+          required
+          placeholder="Senha123@"
+          minlength="8"
+        /><br /><br />
+
+        <input
+          type="submit"
+          value="Enviar"
+          class="botao-enviar"
+          required
+        /><br /><br />
+      </form>
+    </section>
+    <audio id="minha-musica">
+      <source
+        src="/correcao_dos_trabalhos_bimestrais/daniel/EXERCÍCIOS DANIEL VILELLA-1/assets/flamengo é time.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+  </body>
+  <script>
+    var minhaImagem = document.getElementById('minha-imagem')
+    minhaImagem.addEventListener('click', function () {
+      var minhaMusica = document.getElementById('minha-musica')
+      minhaMusica.play()
+      alert('TIME É O OTARIO DA GAMA O MENGO É SELEÇÃO!!!!!!!')
+    })
+  </script>
+  <footer>© Daniel Vilella 2024</footer>
+</html>

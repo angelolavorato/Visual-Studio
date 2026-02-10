@@ -1,0 +1,9 @@
+.botao-classe {
+    background-color: #fa4616;
+  }
+  #botao-id {
+    background-color: #c0c0c0;
+  }
+  button[type='button'] {
+    background-color: green;
+  }

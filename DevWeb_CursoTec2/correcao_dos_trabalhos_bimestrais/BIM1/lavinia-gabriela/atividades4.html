@@ -1,0 +1,190 @@
+<!--VISTO-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios4</title>
+</head>
+<body>
+    <section>
+        <nav>
+           <table>
+               <h2><a href="#EXERC1">Exercicio 1</a></h2>
+               <h2><a href="#EXERC2">Exercicio 2</a></h2>
+               <h2><a href="#EXERC3">Exercicio 3</a></h2>
+               <h2><a href="#EXERC4">Exercicio 4</a></h2>
+               <h2><a href="#EXERC5">Exercicio 5</a></h2></table></nav></section>
+
+     <section id="exercício1">
+        <form action="submit_preferences">
+               <label for="nomedocliente">Nome:</label> 
+               <input
+               type="Nome"
+               name="Nomedocliente"
+               id="Nomedocliente"
+               placeholder="Nome"></form></section>
+
+     <section>
+         <form action="submit_preferences">
+               <label for="emaildoCliente:">Email:</label> 
+               <input
+               type="email"
+               name="emailCliente"
+               id="emailCliente"
+               placeholder="email@nome.com"></form></section>
+               
+      <section>
+        <form action="password">
+                <label for="password">Senha</label><br />
+                <input 
+                name="Senha"
+                id="Senha"
+                placeholder="Senha"
+                minlength="8"
+                required
+                type="password"
+                pattern="\d{8}"
+                /><br />
+                <label for="password"> Confirme a Senha</label><br />
+                <input
+                name="Senha"
+                id="Senha"
+                placeholder="Confirmar Senha"
+                minlength="8"
+                required
+                type="password"
+                /><br />
+                <input type="submit" /> </form></section>
+
+      <section id="EXERC2"><H1>FEEDBACK</H1>
+        <form action="submit_preferences">
+            <label for="nomedocliente">Nome:</label> 
+            <input
+            type="Nome"
+            name="Nomedocliente"
+            id="Nomedocliente"
+            placeholder="Nome"></form></section>
+
+      <section>
+        <form action="submit_preferences">
+            <label for="emaildoCliente:">Email:</label> 
+            <input
+            type="email"
+            name="emailCliente"
+            id="emailCliente"
+            placeholder="email@nome.com"></form></section>
+
+     <section>
+    <label for="nota">Nota do produto</label>
+    <select name="nota" id="nota">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option></select>
+        
+    <section><label for="feedback">Comentario</label>
+    <textarea
+    name="feedback" id="feedback"
+    placeholder="Deixe seu comentario"></textarea>
+
+    <input type="submit">
+    </section>          
+               
+    <section id="EXERC3"><h1>NOTIFICAÇOES</h1>
+    <form action="submit_preferences">
+        <label for="nomedocliente">Nome:</label> 
+        <input
+        type="Nome"
+        name="Nomedocliente"
+        id="Nomedocliente"
+        placeholder="Nome"></form>
+
+    <form action="submit_preferences">
+        <label for="emaildoCliente:">Email:</label> 
+        <input
+        type="email"
+        name="emailCliente"
+        id="emailCliente"
+        placeholder="email@nome.com"></form>
+
+        
+    <label  for="notificaçoes">Selecione onde quer receber notificaçoes</label>
+    <select name="notificaçoes"   
+    id="notificaçoes">
+    <option value="SMS">SMS</option>
+    <option value="E-mail">E-mail</option>
+    <option value="Push">Push</option></select>
+    <input type="submit"></form></section>
+
+    <section id="EXERC4"><h1> Envio de Arquivo</h1>
+    <form action="arquivo" method="post">
+        <label for="nomedocliente">Nome:</label> 
+        <input type="Nome"
+        name="Nomedocliente"
+         id="Nomedocliente"
+        placeholder="Nome"></form>
+        
+    <form action="arquivo" method="post">
+        <label for="emaildoCliente:">Email:</label> 
+        <input 
+        name="Email"
+        id="Email"
+        placeholder="email@nome.com"
+        type="email"></form>
+
+    <label for="arquivo">Envie um arquivo</label>    
+    <input required type="file" name="Arquivo" id="Arquivo" />
+    <input type="submit" value="Enviar" /></form></section>
+
+
+
+     <section id="EXERC5"><h1>HOTEL</h1>
+        <form action="submit_preferences">
+            <label for="nomedocliente">Nome:</label> 
+            <input type="Nome"
+            name="Nomedocliente"
+             id="Nomedocliente"
+            placeholder="Nome"></form>
+
+        <form action="submit_preferences">
+            <label for="emaildoCliente:">Email:</label> 
+            <input
+            type="email"
+            name="emailCliente"
+            id="emailCliente"
+            placeholder="email@nome.com"></form>  
+         
+            <label for="Checkin" id="Checkin" type="date"></label>
+            <form><label for="Checkout">Data de Check-out</label>
+            <input required name="Checkout" id="Checkout" type="date"></form>
+
+        <label  for="Tipo de quarto">Selecione qual tipo de quarto deseja</label>
+        <select name="Tipo de quarto"   
+        id="Tipo de quarto">
+            <option value="Simples">Simples</option>
+            <option value="Duplo">Duplo</option>
+            <option value="Suite">Suite</option></select>
+            <input type="submit">
+
+        
+       <form><label for="Cafe">Solicitar cafe?</label>
+        <select name="Cafe" id="Cafe">
+           <option value="nao">Não</option>
+           <option value="sim">Sim</option>
+        </select>
+        <input type="submit"></form></section>
+
+
+
+        </section>
+
+
+
+       
+             
+        <footer>Desenvolvido por Lavínia Amaral e Gabriela Braz</footer>  
+</body>
+</html>

@@ -1,0 +1,35 @@
+/*webfonts*/
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+/*p {
+  font-family: sans-serif; //tipo de fonte
+  font-size: 18px; //tamanho da fonte
+  font-style: italic; //apenas acrescenta o italico
+  font-weight: bold; //negrito
+}*/
+/*p {
+  // text-transform: uppercase;
+  //text-transform: lowercase;
+  //text-transform: capitalize;
+  //text-align: center;
+  //text-align: right;
+  //text-align: justify;
+
+  //line-height: 2;
+  //letter-spacing: 1; //espaçamento de letras
+  //word-spacing: 10; //espaçamento entre palavras
+
+  //font: italic small-caps condensed 16px/1.6 sans-serif;
+}*/
+
+mark {
+  color: red;
+  text-transform: uppercase;
+}
+
+a {
+  //text-decoration: line-through red dotted;
+  text-decoration: none;
+}

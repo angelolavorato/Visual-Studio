@@ -1,0 +1,121 @@
+body {
+  display: center;
+}
+.html {
+}
+.title1 {
+  text-align: center;
+  position: center;
+  color: red;
+  font-size: 24px;
+}
+.text1 {
+  text-align: left;
+  color: blue;
+  font-size: 24px;
+}
+.t1 {
+  font-size: 24px;
+  color: green;
+  text-decoration: underline salmon;
+  font-weight: bold;
+}
+.t2 {
+  font-size: 24px;
+  color: darkblue;
+  text-decoration: underline yellow;
+  font-style: italic;
+  font-weight: bold;
+}
+.t3 {
+  font-size: 24px;
+  color: gray;
+  text-decoration: underline red;
+  font-weight: bold;
+}
+.texto {
+  color: green;
+  color: orange !important;
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+}
+.botao {
+  background-size: 190px 190px;
+  background-image: url('chad.jpg');
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: black solid 8px;
+}
+.botao:hover {
+  background-size: 190px 190px;
+  background-image: url('uno.jpg');
+  border-color: red;
+}
+.box {
+  border: black solid 8px;
+  width: 200px;
+  height: 100px;
+  opacity: 83%;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: ;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background: gray;
+}
+.flex {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+}
+.absolute {
+  position: right;
+  width: 400px;
+  height: 300px;
+  background-color: salmon;
+}
+
+.e7 {
+  display: flex;
+  justify-content: space-between;
+}
+.coluna1 {
+  background-color: green;
+  width: 45%;
+  height: 500px;
+}
+.coluna2 {
+  background-color: green;
+  width: 45%;
+  height: 500px;
+}
+@media (max-width: 1000px) {
+  body{
+    flex-direction: column;
+  }
+  .coluna1{width: 100%;}
+  .coluna2{width: 100%;}
+}
+.button {
+  background-size: 190px 190px;
+  background-color:red;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: black solid 8px;
+}
+.button:hover {
+  background-size: 190px 190px;
+  border-color: black;
+  background-color: green;
+}

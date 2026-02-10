@@ -1,0 +1,12 @@
+.transicao {
+    border-radius: 100px;
+  
+    background: #3f5efb;
+  
+    padding: 34px;
+    transition: background-color 1s ease;
+  }
+  .transicao:hover {
+    transition: background-color 1s ease;
+    background: rgba(252, 70, 107, 1);
+  }

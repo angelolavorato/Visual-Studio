@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho Personalizado</title>
+    
+<body>
+    
+    <style>
+        
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+           
+        }
+        
+        .logo {
+            width: 100px; 
+            height: auto;
+            margin-right: 20px;
+        }
+        
+        .title-container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        
+        
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <img src="c:\Users\SEEMG\Desktop\euzinha\opera_gx_browser_logo_icon_152976.webp" alt="Logotipo" class="logo">
+        
+        <div class="title-container">
+            <h1>Meu Site</h1>
+            <h2>Welcome ao meu site</h2>
+        </div>
+    </header>
+
+    <section id="lista-tarefas">
+        <h2>2.Lista de Tarefas</h2>
+        <ul>
+            <li>cuidar dos passarinhos</li>
+            <li>ir pra escola</li>
+            <li>Ir ao mercado</li>
+            <li>ir ao curso</li>
+            <li>Fazer exercícios da escola</li>
+        </ul>
+
+        <h3>Subtarefas para "Ir ao mercado"</h3>
+        <ol>
+            <li>Requeijão</li>
+            <li>Biscoito</li>
+            <li>Maçã</li>
+        </ol>
+    </section>
+
+    
+    
+        <section id="video-tutorial">
+            <h2>3.Vídeo Tutorial</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/watch?v=7ytGFxD-FcI&pp=ygUEamphbQ%3D%3D" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+    
+        <section id="horarios">
+            <h2>4.Meu Horário de Aulas</h2>
+            <table border="1">
+    
+                <th> Dia da Semana </th> 
+                <tr>
+        
+                <td> Seg.</td>
+                <td> Ter.</td>
+                <td> Qua.</td>
+                <td> Qui.</td>
+                <td> Sex.</td>
+                </tr>
+        
+                <th>Matérias</th>
+                <tr>
+        
+               <td><li>S.O.</li>
+                <li>S.O.</li>
+                <li> S.O.</li>
+                <li> Seg. Inf.</li>
+                <li> Seg. Inf.</li></td>
+        
+                <td> <li>Seg. Inf.</li>
+                    <li>Seg. Inf.</li>
+                    <li>Ling. Prog.</li>
+                    <li> Ling. Prog.</li>
+                        <li>Ling. Prog.</li>
+                </td>
+                <td><li>Dev. Web</li>
+                    <li> Dev. Web.</li>
+                        <li> Dev. Web.</li>
+                            <li> Ling. Prog.</li>
+                                <li>Ling. Prog.</li>
+                </td>
+                <td> <li>S.O.</li>
+                    <li> Dev. Web.</li>
+                        <li> Dev. Web.</li>
+                            <li>Manutenção </li>
+                                <li>Manutenção </li> 
+                </td>
+                <td><li>Redes</li>
+                    <li>Redes</li>
+                    <li>Redes</li>
+                    <li>Redes</li>
+                </td>
+            </tr>
+    
+            </table>
+        </section>
+        
+            <section id="formulario de contato">
+                <h1>5.Formulário de Contato</h1>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+        
+                
+        
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>   
+            
+            
+                <section id="nossa-equipe">
+                    <h2>6.Nossa Equipe</h2>
+                    <figure class="team-member">
+                        <img src="c:\Users\SEEMG\Desktop\euzinha\mini ioda.jpg" alt="Membro 1">
+                        <figcaption>
+                            <p>Yoda:mestre </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="team-member">
+                        <img src="c:\Users\SEEMG\Desktop\euzinha\Dory.png" alt="Membro 2">
+                        <figcaption>
+                            <p>Peixinha:Dory</p>
+                        </figcaption>
+                    </figure>
+                    
+                </section>
+            
+            
+                <header>
+                    <nav>
+                        <a href="#seção1">Ir para Seção 1</a> |
+                        <a href="#seção2">Ir para Seção 2</a> |
+                        <a href="#seção3">Ir para Seção 3</a>
+                    </nav>
+                </header>
+            
+                
+                <section id="seção1">
+                    <h2>Seção 1</h2>
+                    <p></p>
+                </section>
+            
+                <section id="seção2">
+                    <h2>Seção 2</h2>
+                    <p></p>
+                </section>
+            
+                <section id="seção3">
+                    <h2>Seção 3</h2>
+                    <p></p>
+                </section>
+<section>
+                <h1>8.Cadastro de Evento</h1>
+
+    <form>
+        
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        
+        <label for="senha">Senha (mínimo 8 caracteres):</label>
+        <input type="password" id="senha" name="senha" minlength="8" required>
+        <br><br>
+
+        
+        <label for="confirma_senha">Confirmar Senha:</label>
+        <input type="password" id="confirma_senha" name="confirma_senha" minlength="8" required>
+        <br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</section> 
+
+<footer>
+    <p>© 2024 Desenvolvido por Victória Raissa De Oliveira Batista. </p>
+</footer>
+
+</body>
+</html>

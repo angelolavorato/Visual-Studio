@@ -1,0 +1,50 @@
+
+
+h2 { color: red; font-size: 24px; } 
+
+p { color: rgba(0, 0, 255, 0.507); }
+
+
+ p { font-size: 14px; } 
+.frase { color: rgb(19, 168, 236); } 
+#cicatriz { font-weight: bold; color: rgb(105, 240, 199); }
+
+
+.paragrafo { color: blue; } p { color: green; } 
+#importante { color: rgb(46, 134, 248); }
+
+button { width: 200px; height: 50%; font-size: 1.5rem; padding: 10px; }
+
+
+.card { border: 2px solid black; padding: 20px; margin: 15px; background-color: #f0f0f0; 
+}
+
+
+
+.container { display: flex; justify-content: space-around; }
+
+
+.flex-item { width: 100px; height: 100px;
+    background-color: lightblue; } 
+    
+.absolute-box { position: absolute; top: 50px; 
+    left: 100px; width: 150px; height:
+    150px; background-color: lightgreen; }
+
+
+
+.botao { padding: 10px 20px; background-color: #3498db; 
+    color: white; border: none; transition:
+    background-color 0.3s ease; } 
+.botao:hover { background-color: #2ecc71; }
+
+li:first-child { background-color: lightyellow; }
+
+
+
+primary-color: blue; .container 
+{ background-color: primary-color; padding: 20px; h1 { color: white; } p {
+    color: lightgray; } }
+
+    .container { background-color: blue; padding: 20px; } .container h1 { color: white; } .container p { color:
+        lightgray; 

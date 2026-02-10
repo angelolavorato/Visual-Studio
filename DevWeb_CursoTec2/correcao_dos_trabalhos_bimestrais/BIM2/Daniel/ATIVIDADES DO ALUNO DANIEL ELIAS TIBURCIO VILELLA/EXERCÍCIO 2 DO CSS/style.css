@@ -1,0 +1,99 @@
+.h17 {
+  color: red;
+  font-size: 24px;
+}
+.p1 {
+  color: blue;
+}
+
+.cl-exemplo {
+  color: green;
+}
+#id-exemplo {
+  font-weight: bold;
+  color: red;
+  font-size: 14px;
+}
+
+section {
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #fef9d9;
+  transition: background-color 0.6s ease-in-out;
+}
+
+section:hover {
+  box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.6);
+  background-color: #d2e0fb;
+}
+
+.paragrafo {
+  color: blue;
+  color: green;
+}
+#importante {
+  color: red;
+}
+
+button {
+  width: 200px;
+  height: 50%;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.card {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 15px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+.absolute-box {
+  position: absolute;
+  /*top: 50px;
+  left: 100px;*/
+  width: 150px;
+  height: 150px;
+  background-color: lightgreen;
+}
+
+/*body {
+  display: flex;
+  justify-content: space-between;
+}*/
+.coluna-esquerda,
+.coluna-direita {
+  width: 45%;
+  height: 300px;
+  background-color: lightcoral;
+}
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  .coluna-esquerda,
+  .coluna-direita {
+    width: 100%;
+  }
+}
+
+.botao {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.botao:hover {
+  background-color: #2ecc71;
+}

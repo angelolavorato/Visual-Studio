@@ -1,0 +1,6 @@
+button {
+  width: 500px; /*largura ou margem*/
+  height: 500px; /*Altura*/
+  font-size: 15px; /*tamanho da fonte*/
+  padding: 10px; /*Preenchimeno*/
+}

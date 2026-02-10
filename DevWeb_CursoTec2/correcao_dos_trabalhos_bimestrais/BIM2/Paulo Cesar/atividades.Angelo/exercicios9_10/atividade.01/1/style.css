@@ -1,0 +1,17 @@
+*
+h1 {
+  color: rgb(233, 130, 4);
+}
+h2 {
+  color: rgb(0, 38, 255);
+  font-size: 72px;
+}
+h3 {
+  weight: bold;
+  color: rgb(114, 250, 218);
+  font-style: italic;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}

@@ -1,0 +1,36 @@
+.container {
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: rgb(230, 255, 255);
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: rgb(230, 255, 255);
+}
+
+a {
+  color: red;
+  text-decoration: none;
+  font-family: courier;
+  font-weight: bold;
+  padding: 10px;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+label {
+  color: black;
+  font-family: monospace;
+  font-size: 15px;
+}

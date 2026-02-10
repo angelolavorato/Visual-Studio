@@ -1,0 +1,32 @@
+/*Aqui dentro vai tá tudo comentado*/
+p {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: red;
+}
+body {
+  background-color: orange;
+}
+
+h1,
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: green;
+}
+.classe {
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+}
+#text {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}

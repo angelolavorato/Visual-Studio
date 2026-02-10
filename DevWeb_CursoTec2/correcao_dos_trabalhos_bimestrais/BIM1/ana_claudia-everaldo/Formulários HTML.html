@@ -1,0 +1,151 @@
+<!--CRIAÇÃO DE HADS E BODYS FORA DO LUGAR AO INVÉS DE SEÇÕES-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuário</title>
+  </head>
+  <body>
+    <h1>Cadastro de Usuário</h1>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" minlength="8" required />
+      <br />
+      <label for="confirmar-senha">Confirmar Senha:</label>
+      <input
+        type="password"
+        id="confirmar-senha"
+        name="confirmar-senha"
+        minlength="8"
+        required
+      />
+      <br />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <title>Feedback de Produto</title>
+
+    <h1>Feedback de Produto</h1>
+    <form action="#" method="post">
+      <label for="nome-cliente">Nome do Cliente:</label>
+      <input type="text" id="nome-cliente" name="nome-cliente" required />
+      <br />
+      <label for="email-cliente">Email do Cliente:</label>
+      <input type="email" id="email-cliente" name="email-cliente" required />
+      <br />
+      <label>Avaliação do Produto:</label>
+      <br />
+      <input type="radio" id="nota1" name="avaliacao" value="1" />
+      <label for="nota1">1</label>
+      <input type="radio" id="nota2" name="avaliacao" value="2" />
+      <label for="nota2">2</label>
+      <input type="radio" id="nota3" name="avaliacao" value="3" />
+      <label for="nota3">3</label>
+      <input type="radio" id="nota4" name="avaliacao" value="4" />
+      <label for="nota4">4</label>
+      <input type="radio" id="nota5" name="avaliacao" value="5" />
+      <label for="nota5">5</label>
+      <br />
+      <label for="comentarios">Comentários Adicionais:</label>
+      <textarea
+        id="comentarios"
+        name="comentarios"
+        rows="4"
+        cols="50"
+      ></textarea>
+      <br />
+      <button type="submit">Enviar Feedback</button>
+    </form>
+
+    <title>Preferências de Notificação</title>
+
+    <h1>Preferências de Notificação</h1>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label>Preferências de Notificação:</label>
+      <br />
+      <input
+        type="checkbox"
+        id="notificacao-email"
+        name="notificacao"
+        value="email"
+      />
+      <label for="notificacao-email">Notificações por Email</label>
+      <br />
+      <input
+        type="checkbox"
+        id="notificacao-sms"
+        name="notificacao"
+        value="sms"
+      />
+      <label for="notificacao-sms">Notificações por SMS</label>
+      <br />
+      <input
+        type="checkbox"
+        id="notificacao-push"
+        name="notificacao"
+        value="push"
+      />
+      <label for="notificacao-push">Notificações por Push (via app)</label>
+      <br />
+      <button type="submit">Salvar Preferências</button>
+    </form>
+
+    <title>Upload de Arquivo</title>
+
+    <h1>Upload de Arquivo</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="nome-usuario">Nome do Usuário:</label>
+      <input type="text" id="nome-usuario" name="nome-usuario" required />
+      <br />
+      <label for="email-usuario">Email:</label>
+      <input type="email" id="email-usuario" name="email-usuario" required />
+      <br />
+      <label for="arquivo">Escolha um arquivo:</label>
+      <input type="file" id="arquivo" name="arquivo" required />
+      <br />
+      <button type="submit">Enviar Arquivo</button>
+    </form>
+
+    <title>Reserva de Hotel</title>
+
+    <h1>Reserva de Hotel</h1>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <label for="checkin">Data de Check-in:</label>
+      <input type="date" id="checkin" name="checkin" required />
+      <br />
+      <label for="checkout">Data de Check-out:</label>
+      <input type="date" id="checkout" name="checkout" required />
+      <br />
+      <label for="tipo-quarto">Tipo de Quarto:</label>
+      <select id="tipo-quarto" name="tipo-quarto" required>
+        <option value="simples">Simples</option>
+        <option value="duplo">Duplo</option>
+        <option value="suite">Suíte</option>
+      </select>
+      <br />
+      <input type="checkbox" id="cafe-da-manha" name="cafe-da-manha" />
+      <label for="cafe-da-manha">Solicitar café da manhã</label>
+      <br />
+      <button type="submit">Reservar</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+body {
+  margin: 0px;
+}
+.exercicio {
+  text-align: center;
+  position: center;
+  color: yellow;
+  font-size: 34px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+img {
+  justify-content: center;
+}
+.img1 {
+  display: flex;
+  justify-content: center;
+}
+.unotext {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.e1 {
+  align-items: center;
+}
+.uno {
+  width: 600px;
+  height: 600px;
+}
+.img2 {
+  display: flex;
+  justify-content: center;
+}
+.palio {
+  max-width: 60%;
+
+  height: auto;
+}
+.img3 {
+  display: flex;
+  justify-content: center;
+}
+.luan {
+  width: 600px;
+  height: 600px;
+  border: 5px solid;
+  border-radius: 30px;
+  box-shadow: 20px 20px 5px gray;
+}
+.luantext {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+.display1 {
+  display: flex;
+  justify-content: center;
+}
+.img4 {
+  background-image: url('luan.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+}
+.sprite {
+  width: 50px;
+  height: 50px;
+  background-image: url('chad.jpg');
+  background-size: 60px 60px;
+}
+.img6 {
+  display: flex;
+  justify-content: center;
+}
+.svg {
+  width: 500px;
+  height: 500px;
+}
+.img7 {
+  display: flex;
+  justify-content: center;
+}
+.chad {
+  width: 500px;
+  height: 500px;
+  filter: grayscale(100%);
+}
+.chad2 {
+  width: 500px;
+  height: 500px;
+  filter: blur(5px);
+}
+.img8 {
+  display: flex;
+  justify-content: center;
+}
+.palio {
+  width: 500px;
+  height: 500px;
+}
+.img9{
+  display: flex;
+  justify-content: center;
+}
+.luan2{
+  width: 500px;
+  height: 500px;
+  
+}
+.luan3{
+  width: 500px;
+  height: 500px;
+}
+.img10{
+  display: flex;
+  justify-content: center;
+}
+.chucaotxt{
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  
+}
+.chucao{
+  width: 600px;
+  height: 600px;
+}

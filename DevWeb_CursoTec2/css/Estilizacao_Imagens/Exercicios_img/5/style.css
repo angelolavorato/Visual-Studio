@@ -1,0 +1,7 @@
+.sprite {
+  width: 100px;
+  height: 150px;
+  background-position: bottom;
+  background-size: 200px 50px;
+  background-image: url(chavee.jpg);
+}

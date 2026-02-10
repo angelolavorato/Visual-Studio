@@ -1,0 +1,14 @@
+body.imagem-responsiva {
+    max-width: auto%;
+    height: autopx;
+    background-size: cover;
+    background-position: center;
+    color: #11181b;
+    font-weight: bold;
+    text-align: center;
+    padding: 4rem 2rem;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+  }
+  body {
+    background-image: url(/menina.jpg);
+  }

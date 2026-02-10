@@ -1,0 +1,42 @@
+.container {
+  border: 10px solid #000;
+  padding: 20px;
+  background-color: red;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  background-color: lightgreen;
+  padding: 20px;
+  margin: 5px;
+  border: 10px solid #000;
+}
+#header,
+#footer {
+  background-color: green;
+  padding: 10px;
+  text-align: center;
+}
+
+#content {
+  margin: 20px;
+  background-color: lightgreen;
+}
+.noticia-1 {
+  background-color: lightgreen;
+  padding: 20px;
+}
+.noticia-2 {
+  background-color: lightblue;
+  padding: 20px;
+}
+.section-div {
+  background-color: blue;
+  padding: 5px;
+}
+.divclass {
+  background-color: #f0f0f0;
+  padding: 20px;
+}

@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+.coluna-esquerda,
+.coluna-direita,
+.coluna-do-meio {
+  width: 25%;
+  height: 300px;
+  background-color: blue;
+}
+@media (max-width: 400px) {
+  body {
+    flex-direction: row;
+  }
+  .coluna-esquerda,
+  .coluna-direita,
+  .coluna-do-meio {
+    width: 100%;
+  }
+}

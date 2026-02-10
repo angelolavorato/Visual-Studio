@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercícios HTML</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#1-Blog">Exercício 1</a><br />
+      <a href="#2-Links_uteis">Exercício 2</a><br />
+      <a href="#3-Mapa">Exercício 3</a><br />
+      <a href="#4-Acoes">Exercício 4</a><br />
+      <a href="#5-Legenda">Exercício 5</a><br />
+      <a href="#6-Preferencias">Exercício 6</a><br />
+      <a href="#7-Tabela">Exercício 7</a><br />
+      <a href="#8-Feedback">Exercício 8</a><br />
+    </nav>
+    <section id="1-Blog">
+      <h1>Exercício 1: Página de Blog Simples</h1>
+      <article>
+        <h2>Post 1</h2>
+        <time datetime="2024-09-04">Quarta-Feira 04 de agosto de 2024</time>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+          corporis eligendi vitae aliquam repellat ut reprehenderit enim
+          obcaecati quasi et assumenda dolore, ad ab nihil tempore vero
+          reiciendis quibusdam. Quas.
+        </p>
+        <footer>
+          <a href="#saiba_mais">Saiba Mais</a>
+        </footer>
+      </article>
+      <article>
+        <h2>Post 2</h2>
+        <time datetime="2024-09-04">Quarta-Feira 04 de agosto de 2024</time>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+          corporis eligendi vitae aliquam repellat ut reprehenderit enim
+          obcaecati quasi et assumenda dolore, ad ab nihil tempore vero
+          reiciendis quibusdam. Quas.
+        </p>
+        <footer>
+          <a href="#saibamais">Saiba Mais</a>
+        </footer>
+      </article>
+      <article>
+        <h2>Post 3</h2>
+        <time datetime="2024-09-04">Quarta-Feira 04 de agosto de 2024</time>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+          corporis eligendi vitae aliquam repellat ut reprehenderit enim
+          obcaecati quasi et assumenda dolore, ad ab nihil tempore vero
+          reiciendis quibusdam. Quas.
+        </p>
+        <footer>
+          <a href="#saibamais">Saiba Mais</a>
+        </footer>
+      </article>
+    </section>
+    <section id="2-Links_uteis">
+      <h1>Exercício 2: Linkando para Sites Externos</h1>
+      <ul>
+        <li>
+          <a href="https://www.google.com/">google</a>
+        </li>
+        <li>
+          <a href="https://www.gmail.com/">gmail</a>
+        </li>
+        <li>
+          <a href="https://g1.globo.com/">g1</a>
+        </li>
+      </ul>
+    </section>
+    <section id="3-Mapa">
+      <h1>Exercício 3: Embedding de um Mapa</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872452.039006546!2d-48.79669580000001!3d-23.5636703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce579ee2d719cd%3A0xad9ab6fe8c2722b9!2zUMOjbyBkZSBBw6fDumNhcg!5e0!3m2!1spt-BR!2sbr!4v1727389580611!5m2!1spt-BR!2sbr"
+        width="300"
+        height="225"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section id="4-Acoes">
+      <h1>Exercício 4: Criação de Botões</h1>
+      <button id="salvar">Salvar</button><br />
+      <button id="cancelar">Cancelar</button><br />
+      <button id="excluir">Excluir</button><br />
+    </section>
+    <section id="5-Legenda">
+      <h1>Exercício 5: Criação de uma Imagem com Legenda</h1>
+      <img
+        src="/CursoTec/cadeira.jfif"
+        alt="cadeira de madeira com assento na cor cinza, em num chão acinzentado e uma parede branca"
+      />
+      <figcaption>cadeira de madeira</figcaption>
+    </section>
+    <section id="6-Preferencias">
+      <h1>Exercício 6: Formulário com Checkboxes e Radiobuttons</h1>
+      <h2>Preferencias</h2>
+      <form>
+        <input
+          type="checkbox"
+          id="Newsletter"
+          name="Newsletter"
+          value="Newsletter"
+        />
+        <label for="Newsletter"> Receber Newsletter </label><br />
+        <input
+          type="checkbox"
+          id="promocoes"
+          name="promocoes"
+          value="promocoes"
+        />
+        <label for="promocoes"> Participar de Promoções</label><br />
+        <input
+          type="checkbox"
+          id="notificacoes"
+          name="notificacoes"
+          value="notificacoes"
+        />
+        <label for="notificacoes"> Receber Notificações</label><br />
+
+        <h2>Frequência de email</h2>
+        <input type="radio" name="frequencia" value="diario" />
+        <label>Diário</label><br />
+        <input type="radio" name="frequencia" value="semanal" />
+        <label>Semanal</label><br />
+
+        <input type="radio" name="frequencia" value="mensal" />
+        <label>Mensal</label>
+      </form>
+    </section>
+    <section id="7-Tabela">
+      <h1>Exercício 7: Tabela com Colspan e Rowspan</h1>
+      <table border="1">
+        <th colspan="2">Cabeçalho Colspan</th>
+        <th>Cabeçalho Simples</th>
+        <tr>
+          <td>item 1</td>
+          <td>item 2</td>
+          <td>item 3</td>
+        </tr>
+      </table>
+    </section>
+    <section id="8-Feedback">
+      <h1>Exercício 8: Criação de um Formulário de Feedback</h1>
+      <h2>Feedback</h2>
+      <form action="/submit" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" /><br />
+        <label for="Email">Email:</label>
+        <input type="text" id="email" name="email" />
+        <br />
+        <br />
+        <input type="number" id="quantity" name="quantity" min="1" max="5" />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <footer>Paulo CesarM.F</footer>
+  </body>
+</html>

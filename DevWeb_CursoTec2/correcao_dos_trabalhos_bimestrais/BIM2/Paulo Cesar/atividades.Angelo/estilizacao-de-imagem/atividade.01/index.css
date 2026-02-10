@@ -1,0 +1,4 @@
+img {
+  max-width: 100%; // aqui estou ajustando a largura da imagem para se adaptar ao tamanho da tela
+  height: auto; // aqui estou ajustando a altura da imagem para se adaptar ao tamanho da tela
+}

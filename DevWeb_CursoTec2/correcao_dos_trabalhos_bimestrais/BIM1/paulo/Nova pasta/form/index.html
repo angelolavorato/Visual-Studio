@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários HTML</title>
+  </head>
+  <body>
+    Menu de Navegação
+    <nav>
+      <a href="#estrutura_basica">Estrutura Básica</a><br />
+      <a href="#tipos_de_campo">Tipos de Campo</a><br />
+      <a href="#campos_de_selecao">Campos de Seleção</a><br />
+      <a href="#envio_arquivo">Envio de arquivos</a><br />
+      <a href="#botao">Botão</a><br />
+      <a href="#atribrutos_importantes">Atributos Importantes</a><br />
+      <a href="#get_post">GET POST</a><br />
+      <a href="#validacao">Validação</a><br />
+    </nav>
+    <section id="estrutura_basica">
+      <h2>Exemplo de estrutura de um Formulário</h2>
+      <p>
+        Um formulário é um bloco de conteúdo que permite aos usuários fornecer
+        dados ao seu site ou aplicativo. Ele é uma maneira de interagir com os
+        dados fornecidos pelos usuários.
+      </p>
+      <p>
+        <strong>- **action**: </strong> Define para onde os dados serão enviados
+        (geralmente uma URL de servidor).
+      </p>
+      <p>
+        <strong>- **method**:</strong> Define como os dados serão enviados. Pode
+        ser `GET` (dados são visíveis na URL) ou `POST` (dados são enviados no
+        corpo da requisição).
+      </p>
+    </section>
+    <section id="tipos_de_campo">
+      <form action="URL_destino" method="POST/GET">
+        <label for="nome">Nome: </label><br />
+        <input type="text" id="nome" name="nome" /><br />
+
+        <label for="mensagem">Mensagem: </label><br />
+        <textarea name="mensagem" id="mensagem"></textarea>
+      </form>
+    </section>
+    <section id="campos_de_selecao">
+      <h2>Campos de Seleção</h2>
+      <form>
+        <label>Escolha sua cor favorita:</label><br />
+        <input type="radio" name="cor" value="vermelho" />Vermelho <br />
+        <input type="radio" name="cor" value="azul" />Azul <br />
+        <input type="radio" name="cor" value="verde" />Verde <br />
+
+        <label>Selecione Seus hobbies: </label><br />
+        <input type="checkbox" name="hobbies" value="futebol" />Futebol <br />
+        <input type="checkbox" name="hobbies" value="leitura" />Leitura <br />
+
+        <label>Escolha uma cidade: </label>
+        <select name="cidade">
+          <option value="sp">São Paulo</option>
+          <option value="rj">Rio de Janeiro</option>
+          <option value="mg">Belo Horizonte</option>
+          <option value="ba">Xique Xique</option>
+          <option value="df">Brasília</option>
+        </select>
+      </form>
+    </section>
+    <section id="envio_arquivo">
+      <h3>Envio de arquivo</h3>
+      <form>
+        <label for="arquivo">Envie seu arquivo</label>
+        <input type="file" id="arquivo" name="arquivo" /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <section id="botao">
+      <h3>Botão</h3>
+      <form action="submit" method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome" required /> <br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+    <section id="atribrutos_importantes">
+      <h3>Atributos Importantes</h3>
+      <form>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="exemplo@dominio.com"
+        /><br /><br />
+      </form>
+    </section>
+    <section id="get_post">
+      <h2>Métodos GET e POST</h2>
+      <p>
+        <strong>- **GET**:</strong> Os dados são anexados à URL e são visíveis.
+        É usado para solicitações de busca ou envio de informações que não
+        precisam ser seguras.
+      </p>
+      <p>
+        <strong>- **POST**:</strong> Os dados são enviados no corpo da
+        solicitação. É o método mais seguro, utilizado para o envio de
+        informações sensíveis.
+      </p>
+    </section>
+    <section id="validacao">
+      <h2>Validação de Formulários</h2>
+      <form>
+        <label for="senh  ">Senha: </label>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          required
+          minlength="8"
+          pattern="\d{5}-\d{3}"
+        /><br /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+  </body>
+</html>

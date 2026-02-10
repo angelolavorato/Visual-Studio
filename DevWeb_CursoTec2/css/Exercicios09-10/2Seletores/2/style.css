@@ -1,0 +1,10 @@
+li {
+  color: #ff69b4;
+  font-weight: bolder;
+}
+li:last-child {
+  color: #00ffff;
+}
+* {
+  margin: 12px;
+}

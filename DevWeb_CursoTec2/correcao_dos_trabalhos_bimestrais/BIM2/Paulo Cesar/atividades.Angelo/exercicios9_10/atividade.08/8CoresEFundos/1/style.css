@@ -1,0 +1,20 @@
+.bloco1 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+.bloco2 {
+  background: linear-gradient(12deg, red 25%, green 50%, orange 75%);
+  width: 100px;
+  height: 100px;
+}
+.bloco3 {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    18deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(62, 62, 148, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}

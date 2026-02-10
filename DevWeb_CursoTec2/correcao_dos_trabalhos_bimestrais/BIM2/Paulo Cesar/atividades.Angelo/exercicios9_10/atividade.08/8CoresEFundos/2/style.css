@@ -1,0 +1,7 @@
+.img_fundo {
+  background-image: url(imgs/cubo_magico.png);
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}

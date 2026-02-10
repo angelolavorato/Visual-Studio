@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Primeira Página HTML</title>
+  </head>
+  <body>
+    <h1>1.Hello Guys ao meu site!</h1>
+    <p>
+      Olá! My name is Victória e este é o meu primeiro site HTML. Estou animada
+      para aprender mais sobre desenvolvimento web!
+    </p>
+
+    <section>
+      <h2>2.Minhas Tarefas</h2>
+      <ol>
+        <li>Acordar cedo</li>
+        <li>Ir para escola</li>
+        <li>Cuidar da minha casa</li>
+      </ol>
+      <ul>
+        <li>Macarrão</li>
+        <li>Queijo</li>
+        <li>Lasanha</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>3.Contato</h2>
+      <form>
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem" name="mensagem"></textarea><br /><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <section id="galeria">
+      <h2>4.Galeria</h2>
+      <img
+        src="c:\Users\SEEMG\Desktop\euzinha\patinho.jfif"
+        alt="Imagem de um patinho amarelo de skate"
+      />
+
+      <img
+        src="c:\Users\SEEMG\Desktop\euzinha\piriquito de terno.jfif"
+        alt="Imagem Meme de uma calopsita de terno"
+      />
+
+      <img
+        src="c:\Users\SEEMG\Desktop\euzinha\img-aleatoria-28.jpg"
+        alt="Imagem de um Ratinho malhando"
+      />
+    </section>
+
+    <section id="horarios">
+      <h2>5.Meu Horário de Aulas</h2>
+      <table border="1">
+        <th>Dia da Semana</th>
+        <tr>
+          <td>Seg.</td>
+          <td>Ter.</td>
+          <td>Qua.</td>
+          <td>Qui.</td>
+          <td>Sex.</td>
+        </tr>
+
+        <th>Matérias</th>
+        <tr>
+          <td>
+            <li>S.O.</li>
+            <li>S.O.</li>
+            <li>S.O.</li>
+            <li>Seg. Inf.</li>
+            <li>Seg. Inf.</li>
+          </td>
+
+          <td>
+            <li>Seg. Inf.</li>
+            <li>Seg. Inf.</li>
+            <li>Ling. Prog.</li>
+            <li>Ling. Prog.</li>
+            <li>Ling. Prog.</li>
+          </td>
+          <td>
+            <li>Dev. Web</li>
+            <li>Dev. Web.</li>
+            <li>Dev. Web.</li>
+            <li>Ling. Prog.</li>
+            <li>Ling. Prog.</li>
+          </td>
+          <td>
+            <li>S.O.</li>
+            <li>Dev. Web.</li>
+            <li>Dev. Web.</li>
+            <li>Manutenção</li>
+            <li>Manutenção</li>
+          </td>
+          <td>
+            <li>Redes</li>
+            <li>Redes</li>
+            <li>Redes</li>
+            <li>Redes</li>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <nav>
+      <h2>6.Menu de Navegação</h2>
+      <a href="#inicio">Início</a> | <a href="#inscricao">Inscrição</a> |
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <footer>
+      <h2>7.Rodapé</h2>
+      <p>© 2024 Victória</p>
+      <a href="politica-privacidade.html">Política de Privacidade</a>
+    </footer>
+
+    <section id="midia">
+      <h2>8.Mídia</h2>
+      <video controls>
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+      <br /><br />
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <section id="tabela-precos">
+      <h2>9.Tabela de Preços</h2>
+      <table>
+        <tr>
+          <th>Produto</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+        </tr>
+        <tr>
+          <td>kit de canetas</td>
+
+          <td>kit de canetas coloridas com 6 cores</td>
+          <td>R$ 12,00</td>
+        </tr>
+        <tr>
+          <td>mala de viagem</td>
+          <td>mala de viagem tam 30x50 cm</td>
+          <td>R$ 50,00</td>
+        </tr>
+        <tr>
+          <td>kit de garrafas</td>
+          <td>kit de garrafas 3 unid</td>
+          <td>R$ 30,00</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="inscricao">
+      <h2>10.Inscrição para Newsletter</h2>
+      <form>
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="assinatura">Tipo de Assinatura:</label><br />
+        <select id="assinatura" name="assinatura">
+          <option value="mensal">Mensal</option>
+          <option value="anual">Anual</option></select
+        ><br /><br />
+
+        <input type="submit" value="Inscrever-se" />
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 Desenvolvido por Victória Raissa De Oliveira Batista</p>
+    </footer>
+  </body>
+</html>

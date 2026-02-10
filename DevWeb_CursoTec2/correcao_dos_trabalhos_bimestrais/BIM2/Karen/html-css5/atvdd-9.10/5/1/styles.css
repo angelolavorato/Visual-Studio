@@ -1,0 +1,15 @@
+.caixa-um {
+    border: 2px solid;
+    padding: 10px;
+    margin: 11px;
+  }
+  .caixa-dois {
+    border: 4px red solid;
+    padding: 12px;
+    margin: 13px;
+  }
+  .caixa-tres {
+    border: 6px blue solid;
+    padding: 14px;
+    margin: 15px;
+  }

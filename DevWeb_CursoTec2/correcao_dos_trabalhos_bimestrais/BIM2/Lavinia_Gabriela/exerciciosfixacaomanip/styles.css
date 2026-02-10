@@ -1,0 +1,46 @@
+.imagem-responsiva {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.imagem-estilizada {
+border: 5px solid black;
+box-shadow: 10px 10px 5px grey;
+border-radius: 15px;
+}
+
+
+.fundo-imagem {
+    background-image: url('chooper com a bochecha estremamente gorda.webp');
+    background-size: cover;background-position: center;
+    width: 100%;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    }
+
+.sprite {
+    width: 50px;
+    height: 50px;
+    background-image: url('leon coquette.jpg');
+    background-position: -50px 0;      
+    background-size: 200px 50px;
+}
+
+.svg-exemplo {
+    border: 2px solid black;
+    }
+
+.imagem-filtro{
+     filter: grayscale(100%);
+}
+
+
+.decorativa {
+    width: 100px;
+    height: auto;
+    }

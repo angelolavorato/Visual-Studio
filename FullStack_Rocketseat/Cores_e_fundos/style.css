@@ -1,0 +1,37 @@
+body {
+  background-image: url('https://www.imagensempng.com.br/wp-content/uploads/2021/08/Emoji-fogo-Png-1024x1024.png');
+  background-repeat: no-repeat;
+  //background-position: position;
+  background-size: cover;
+  background-color: pink;
+}
+
+/*div {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  background-image: url('https://www.imagensempng.com.br/wp-content/uploads/2021/08/Emoji-fogo-Png-1024x1024.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+/*
+Named colors
+rebeccapurple
+aliceblue
+
+RGB Hexadecimal
+#f09 - RGB
+#ff0099 - RRGGBB
+p {
+  //color: red;
+  //color: #fd059a;
+
+  //color: #f093
+}
+*/
+
+/*
+background-color
+background-image
+background-repeat
+*/

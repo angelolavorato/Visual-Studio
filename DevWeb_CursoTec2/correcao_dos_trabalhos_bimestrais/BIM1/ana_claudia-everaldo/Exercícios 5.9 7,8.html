@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página com Ancoragens Internas</title>
+  </head>
+  <body>
+    <!-- Menu de Navegação -->
+    <nav>
+      <ul>
+        <li><a href="#sobre-nos">Sobre Nós</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos">
+      <h2>Sobre Nós</h2>
+      <p>
+        Bem-vindo à nossa loja de instrumentos musicais! Oferecemos uma ampla
+        variedade de instrumentos para músicos de todos os níveis. Nossa missão
+        é proporcionar a melhor experiência musical para nossos clientes.
+      </p>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <figure>
+        <img src="EXDEVWEBCONTINUACAO/Imagens/Imagem2violao.jpg" alt="Violão" />
+        <figcaption>
+          <p>Violão - R$ 1.500,00</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="EXDEVWEBCONTINUACAO/Imagens/Imagem1guitar.jpg"
+          alt="Guitarra"
+        />
+        <figcaption>
+          <p>Guitarra - R$ 5.100,00</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="EXDEVWEBCONTINUACAO/Imagens/Imagem3bass.jpg" alt="Baixo" />
+        <figcaption>
+          <p>Baixo - R$ 5.000,00</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco através do formulário abaixo:</p>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="mensagem">Mensagem:</label>
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+        <br />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="cadastro-evento">
+      <h1>Cadastro de Evento</h1>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" minlength="8" required />
+        <br />
+        <label for="confirmar-senha">Confirmar Senha:</label>
+        <input
+          type="password"
+          id="confirmar-senha"
+          name="confirmar-senha"
+          minlength="8"
+          required
+        />
+        <br />
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <script>
+      document
+        .querySelector('form')
+        .addEventListener('submit', function (event) {
+          var senha = document.getElementById('senha').value
+          var confirmarSenha = document.getElementById('confirmar-senha').value
+          if (senha !== confirmarSenha) {
+            alert('As senhas não coincidem. Por favor, tente novamente.')
+            event.preventDefault()
+          }
+        })
+    </script>
+  </body>
+</html>

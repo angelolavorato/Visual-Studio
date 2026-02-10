@@ -1,0 +1,212 @@
+<!--VISTO-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/assets/logo.jpg" type="image/x-icon" />
+    <title>DN ALL</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#formulario-cadastro">CADASTRO</a>
+      <a href="#feedback">FEEDBACK</a>
+      <a href="#notificacao">NOTIFICAÇÕES</a>
+      <a href="#arquivo">ARQUIVO</a>
+      <a href="#reserva">RESERVA</a>
+    </nav>
+    <div class="container" id="fomrulario-cadastro">
+      <h2>CADASTRO</h2>
+      <form action="/cadastro" method="post">
+        <label for="username">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          placeholder="Joãozinho"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="meuemail@dominio.com"
+        /><br /><br />
+
+        <label for="pwd">Senha:</label>
+        <input
+          type="password"
+          id="pwd"
+          name="pwd"
+          required
+          placeholder="Senha123@"
+          minlength="8"
+          pattern="\d(8)"
+        /><br /><br />
+
+        <label for="pwd">Confirmar Senha:</label>
+        <input
+          type="confirm-password"
+          id="confirmacao-senha"
+          name="senha"
+          required
+          placeholder="Senha123@"
+          minlength="8"
+          pattern="\d(8)"
+        /><br /><br />
+
+        <input
+          type="submit"
+          value="Enviar"
+          class="botao-enviar"
+          required
+        /><br /><br />
+      </form>
+    </div>
+
+    <div class="container" id="feedback">
+      <h2>DEIXE SEU FEEDBACK DO NOSSO PRODUTO!</h2>
+      <form action="/submit_feedback" method="post">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          placeholder="Joãozinho"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="meuemail@dominio.com"
+        /><br /><br />
+        <label for="feedback">Feedback (1-5):</label>
+        <input
+          type="number"
+          id="feedback"
+          name="feedback"
+          min="1"
+          max="5"
+        /><br /><br />
+        <label for="comentario">Comentários Adicionais</label>
+        <textarea id="comentario" name="comentario"></textarea><br /><br />
+
+        <input type="submit" value="Enviar" /><br /><br />
+      </form>
+    </div>
+
+    <div class="container" id="notificacao">
+      <h2>PREFERÊNCIAS</h2>
+      <form action="/submit" method="post">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          placeholder="Joãozinho"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="meuemail@dominio.com"
+        /><br /><br />
+
+        <label for="assinatura">Preferência de notificação</label>
+        <select id="notif" name="notif">
+          <option value="email">Notificações por Email</option>
+          <option value="sms">Notificações por SMS</option>
+          <option value="push">Notificações por PUSH (via app)</option>
+        </select>
+        <br /><br />
+        <input type="submit" value="Enviar" /><br /><br />
+      </form>
+    </div>
+
+    <div class="container" id="arquivo">
+      <h2>DEIXE AQUI SEU ARQUIVO!</h2>
+      <form action="/submit_arquivo" method="post">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          placeholder="Joãozinho"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="meuemail@dominio.com"
+        /><br /><br />
+
+        <label for="arquivo">Mande seu Arquivo</label>
+        <input type="file" id="arquivo" name="arquivo" required /><br /><br />
+        <input type="submit" value="Enviar" /><br /><br />
+      </form>
+    </div>
+
+    <div class="container" id="reserva">
+      <h2>DN HOTEL</h2>
+      <form action="/submit_hotel" method="post">
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          required
+          placeholder="Joãozinho"
+        /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="meuemail@dominio.com"
+        /><br /><br />
+
+        <label for="data-reserva">Data de Check-in</label>
+        <input
+          type="date"
+          id="data-reserva"
+          name="data-reserva"
+          required
+        /><br /><br />
+
+        <label for="data-reserva">Data de Check-out</label>
+        <input type="date" id="data-out" name="data-out" required /><br /><br />
+
+        <label for="tipo-de-quarto">Tipo de Quarto</label>
+        <select name="quarto" id="quarto">
+          <option value="simples">Quarto Simples</option>
+          <option value="duplo">Quarto Duplo</option>
+          <option value="suite">Quarto Suíte</option></select
+        ><br /><br />
+
+        <label for="cafe">Café da Manhã</label>
+        <input type="checkbox" id="cafe" name="cafe" /><br /><br />
+        <input type="submit" value="Enviar" /><br /><br />
+      </form>
+    </div>
+  </body>
+  <footer>© Daniel Vilella 2024</footer>
+</html>

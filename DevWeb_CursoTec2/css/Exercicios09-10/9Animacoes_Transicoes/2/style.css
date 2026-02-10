@@ -1,0 +1,19 @@
+.circulo {
+  padding: 100px;
+  background-image: url(img/bola.jpg);
+  background-size: cover;
+  width: 550px;
+  height: 550px;
+  display: flex;
+  position: relative;
+  animation: mover 5s infinite;
+}
+
+@keyframes mover {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 800px;
+  }
+}

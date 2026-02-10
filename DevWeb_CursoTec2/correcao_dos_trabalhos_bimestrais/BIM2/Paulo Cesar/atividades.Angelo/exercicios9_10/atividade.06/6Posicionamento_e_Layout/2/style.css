@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.box {
+  border: 2px solid;
+  padding: 20px;
+}
+#caixa1 {
+  background-color: lightblue;
+}
+#caixa2 {
+  background-color: pink;
+}
+#caixa3 {
+  background-color: gray;
+}

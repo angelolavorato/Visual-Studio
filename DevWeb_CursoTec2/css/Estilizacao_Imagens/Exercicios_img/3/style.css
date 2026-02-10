@@ -1,0 +1,7 @@
+img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 100px;
+  box-shadow: 22px 44px 10px rgba(0, 0, 10, 0.62);
+}

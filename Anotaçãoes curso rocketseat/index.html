@@ -1,0 +1,278 @@
+<!--
+    Anatomia dos tags
+
+    -Abertura de tag
+    -fechamento de tag
+    -conteúdo 
+    -elementos
+
+-->
+
+<h1>
+    O Título
+</h1>
+
+
+
+<!--Elementos Vazios -->
+
+  <input type="text"><br>
+  
+
+  <!--
+      Atributos HTML
+      - informações extras
+      -configurações 
+  -->
+
+  <br><img src="imagem.png" alt="imagem não aparece pq não existe"> <br>
+
+  
+
+  <!-- Atributos booleanos
+    -não precisam de conteúdo 
+-->
+
+<br><input type="text" disabled> <!--impossível digitar texto por conta do "disabled"-->
+
+
+<!--
+    
+    Aspas
+    -omissão
+    -simples
+    -duplas
+-->
+
+<br>
+<a href=""></a>
+<br>
+
+
+<!--
+    Atributos Globais mais utilizados
+    -class
+    -contenteditable
+    -data-*
+    -id
+    -style
+    -tabindex
+    -title
+
+-->
+
+<div tabindex=>
+    conteúdo
+</div>
+
+<div tabindex="1">
+    conteúdo
+</div>
+
+<div tabindex="2">
+    conteúdo
+</div>
+
+<!--
+    Aninhamento de tags (colocar tags uma dentro da outra basicamente)
+    
+    -Fluxo
+    -Hierarquia (quando uma tiver dentro de outra, essa uma é filha da outra)
+    -Posicionamento dos elementos
+
+-->
+
+<p>
+    Vou <em>escrever </em>um parágrafo <!--<em> muda o caracter pra itálico-->
+</p>
+
+<p>
+    esse é um outro parágrafo
+
+</p>
+
+
+
+<!--
+    Pratica
+
+     Escrever 2 parágrafos, danto ênfase e importância para algumas palavras, 
+     e adicione um link de "saiba mais".
+
+     -use a tag em para ênfase
+     -use a tag strong para impotância
+     -o link pode levar para o google.
+
+-->
+
+
+<h1>
+    Prática
+</h1>
+<p>
+    Lorem <em> dolor</em>  sit amet consectetur adipisicing elit. 
+    Id repellendus quis ducimus odit omnis optio, illo consequuntur commodi nobis explicabo, aliquam, voluptatem dolorem. Autem sint veritatis consequuntur aperiam nemo! Facere?
+</p>
+
+<p>
+    
+    Esse segundo parágrafo eu escrevi <strong> mesmo </strong> ao invés de usar o lorem pra ver mesmo se eu ainda sei escrever alguma coisa, pois meu dedo ainda tá bugado e eu continuo com medo dessa merda nunca mais voltar ao normal, o que pode me causar <strong> problemas </strong> isso tá me <strong> atrapalhando </strong> digitar por vários minutos.
+
+
+</p>
+
+<a href="https://google.com">Saiba Mais</a>
+
+
+<!--
+    Conteúdo do texto e caracteres reservados.
+-->
+
+<p>
+     &lt;<!--lower than "menor que" (<)-->
+    os espaços &gt;<!--greater than "maior que" (>)-->
+    <br>
+    &quot; que colocamos &quot; <!--aspas ""-->
+   </br>
+     além das quebras de linha são ignorados
+</p>
+
+
+<!--
+    Anatomia de um documento HTML
+-->
+
+
+
+<!--
+    Cabeçalhos e parágrafos
+-->
+
+<h1>Sobre Mim</h1> <!--preferencia usar um h1 por página-->
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti est delectus libero odit natus voluptatum quasi cupiditate ea eligendi aperiam. Quae facere dolorem molestiae aliquid possimus perferendis cumque doloremque omnis.
+
+<h2>Nascimento</h2>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi voluptatibus voluptate ea? Porro ad ducimus quia fugit ipsum qui debitis repellat aliquam quaerat, illo eum, consectetur neque natus similique reiciendis?
+
+<h2>Trabalho</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, soluta corporis rem quam doloremque tenetur nihil veritatis quasi fugit ipsam, perspiciatis eum obcaecati, modi iste rerum iure. Aspernatur, aut est?
+
+<a href="">saiba mais</a>
+
+=======================================================================================
+
+
+<!--
+    Listas
+
+    -ordenadas
+    -não ordenadas
+-->
+
+<h2>Ingredientes</h2>
+
+<h3>lista normal</h3>
+
+<!--lista normal-->
+<li>3 folhas</li>
+<li>1 laranjas</li>
+<li>300 ml de asodnasodn</li>
+<li>adoçante</li>
+<li>200 gr de etc</li> 
+
+<!--lista ordenada-->
+<h3>Lista ordenada</h3>
+<ol>
+    <li>3 folhas</li>
+    <li>1 laranjas</li>
+    <li>300 ml de asodnasodn</li>
+    <li>adoçante</li>
+    <li>200 gr de etc</li>
+</ol>
+
+<!--
+    Lista não ordenada é a mesma merda da primeira lista
+
+-->
+
+<h3>Lista não ordenada (é a mesma merda da primeira lista)</h3>
+<ul>
+    <li>3 folhas</li>
+    <li>1 laranjas</li>
+    <li>300 ml de asodnasodn</li>
+    <li>adoçante</li>
+    <li>200 gr de etc</li>
+</ul>
+
+
+<!--
+    citações
+
+    <blockquote>
+    
+    <cite>
+
+    <q>
+-->
+
+<blockquote cite="https://g1.globo.com/economia/tecnologia/noticia/2022/04/25/quem-e-elon-musk-e-por-que-ele-comprou-o-twitter.ghtml">
+    <p>Quem é <strong>Elon Musk</strong> e por que ele <code>&lt;comprou&gt;</code> o <em>Twitter</em>.</p>
+
+</blockquote>
+
+<!--
+    cite
+-->
+
+<p>
+    Quem é Elon Musk e <a href="https://g1.globo.com/economia/tecnologia/noticia/2022/04/25/quem-e-elon-musk-e-por-que-ele-comprou-o-twitter.ghtml" <cite> por que ele comprou o Twitter</cite></a>
+
+</p>
+
+
+
+<!--
+    Abreviações
+
+    <abbr>
+-->
+
+<p>
+    Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web.
+
+</p>
+
+<!--
+    Detalhes de contato
+
+    <address>
+-->
+
+<address>
+    <p>Ângelo Soldati Lavorato<br>
+    <strong>Santana do Campestre, MG</strong>
+    </p>
+</address>
+
+
+<!--
+    Lista de descrição
+    <dl>
+        <dt></dt>
+        <dd></dd>
+    </dl>    
+-->
+
+<h2>Glossário</h2>
+<dl>
+    <dt>Hypertext</dt>
+    <dd>É um hiper texto com possibilidades...</dd>
+
+    <dt>Markup</dt>
+    <dd>Marcação de texto</dd>
+        
+    <dt>Qualquer coisa</dt>
+    <dd>escrever qualquer coisa aqui fodaci</dd>
+    
+</dl>

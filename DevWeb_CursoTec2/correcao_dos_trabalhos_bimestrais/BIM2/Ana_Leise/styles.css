@@ -1,0 +1,93 @@
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  /* Exercício 1 */
+  .centered-image {
+    text-align: center;
+  }
+  .centered-image img {
+    display: inline-block;
+  }
+  
+  /* Exercício 2 */
+  .responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Exercício 3 */
+  .styled-image {
+    border: 5px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Exercício 4 */
+  .background-div {
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  /* Exercício 5 */
+  .sprite {
+    width: 50px;
+    height: 50px;
+    background-image: url('sprite.png');
+    background-position: -10px -10px; /* Ajustar conforme o sprite */
+    background-size: 100px 100px; /* Tamanho do sprite completo */
+  }
+  
+  /* Exercício 6 */
+  .svg-styled circle {
+    fill: lightblue;
+    stroke: #333;
+    stroke-width: 2;
+  }
+  
+  /* Exercício 7 */
+  .grayscale {
+    filter: grayscale(100%);
+  }
+  .blur {
+    filter: blur(5px);
+  }
+  
+  /* Exercício 8 */
+  img[loading="lazy"] {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Exercício 9 */
+  .info {
+    display: block;
+    margin: 0 auto;
+  }
+  .decorative {
+    display: block;
+    margin: 0 auto;
+    opacity: 0.8;
+  }
+  
+  /* Exercício 10 */
+  .seo {
+    display: block;
+    margin: 0 auto;
+  }

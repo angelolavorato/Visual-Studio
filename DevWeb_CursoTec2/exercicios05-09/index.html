@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercícios de HTML 05-09</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+      }
+      header img {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        border-radius: 50%;
+      }
+      header img:hover {
+        transform: scale(1.5);
+        box-shadow: 0 0 8px 5px rgba(6, 66, 248, 0.5);
+      }
+      nav {
+        margin-top: 20px;
+      }
+      table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input,
+      textarea,
+      select {
+        display: block;
+        margin-bottom: 10px;
+        padding: 8px;
+        width: 100%;
+      }
+      button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #48b300;
+      }
+      figure {
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+      }
+      figure img {
+        width: 100px;
+        height: 100px;
+        object-position: top center;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #3518c5;
+      }
+      figure img:hover {
+        box-shadow: 0 0 8px 5px rgba(6, 66, 248, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <!--MENU DE NAVEGAÇÃO-->
+    Menu de NAVEGAÇÃO
+    <nav>
+      <a href="#exercicio-1">Exercício 1</a><br />
+      <a href="#exercicio-2">Exercício 2</a><br />
+      <a href="#exercicio-3">Exercício 3</a><br />
+      <a href="#exercicio-4">Exercício 4</a><br />
+      <a href="#exercicio-5">Exercício 5</a><br />
+      <a href="#exercicio-6">Exercício 6</a><br />
+      <a href="#exercicio-7">Exercício 7</a><br />
+      <a href="#exercicio-8">Exercício 8</a><br />
+    </nav>
+    <!-- Exercício 1: Cabeçalho Personalizado -->
+    <section id="exercicio-1">
+      <header>
+        <img
+          src="/DevWeb_CursoTec2/exercicios05-09/imagens/logo.webp"
+          alt="Logo do Site"
+        />
+        <div>
+          <h1>Site de Tarefas</h1>
+          <h4>Site para gerenciamento de tarefas diárias</h4>
+        </div>
+      </header>
+    </section>
+
+    <!-- Exercício 2: Lista de Tarefas -->
+    <section id="exercicio-2">
+      <h2>Lista de Tarefas</h2>
+      <ul>
+        <li>Tarefa 1</li>
+        <li>
+          Tarefa 2
+          <ol>
+            <li>Subtarefa 1</li>
+            <li>Subtarefa 2</li>
+          </ol>
+        </li>
+        <li>Tarefa 3</li>
+        <li>Tarefa 4</li>
+        <li>Tarefa 5</li>
+      </ul>
+    </section>
+
+    <!-- Exercício 3: Exibição de Vídeo do YouTube -->
+    <section id="exercicio-3">
+      <h2>Vídeo Tutorial</h2>
+      <iframe
+        width="300"
+        height="244"
+        src="https://www.youtube.com/embed/dX9CGRZwD-w"
+        title="How are Microchips Made? 🖥️🛠️ CPU Manufacturing Process Steps"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- Exercício 4: Tabela de Horários -->
+    <section id="exercicio-4">
+      <table>
+        <caption>
+          Tabela de Horários
+        </caption>
+        <tr>
+          <th>Horário</th>
+          <th>Segunda</th>
+          <th>Terça</th>
+          <th>Quarta</th>
+          <th>Quinta</th>
+          <th>Sexta</th>
+        </tr>
+        <tr>
+          <td>18:10</td>
+          <td>Sistemas Operacionais</td>
+          <td>Segurança de Sistemas</td>
+          <td>Desenvolvimento Web</td>
+          <td>Sistemas Operacionais</td>
+          <td>Redes</td>
+        </tr>
+        <tr>
+          <td>19:00</td>
+          <td>Sistemas Operacionais</td>
+          <td>Segurança de Sistemas</td>
+          <td>Desenvolvimento Web</td>
+          <td>Desenvolvimento Web</td>
+          <td>Redes</td>
+        </tr>
+        <tr>
+          <td>19:50</td>
+          <td>Sistemas Operacionais</td>
+          <td>Linguagens de Programação</td>
+          <td>Desenvolvimento Web</td>
+          <td>Redes</td>
+          <td>Redes</td>
+        </tr>
+        <tr>
+          <td>20:50</td>
+          <td>Segurança da Informação</td>
+          <td>Linguagens de Programação</td>
+          <td>Linguagens de Programação</td>
+          <td>Montagem e Manutenção</td>
+          <td>Redes</td>
+        </tr>
+        <tr>
+          <td>21:40</td>
+          <td>Segurança da Informação</td>
+          <td>Linguagens de Programação</td>
+          <td>Linguagens de Programação</td>
+          <td>Montagem e Manutenção</td>
+          <td>---</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Exercício 5: Formulário de Contato -->
+    <section id="exercicio-5">
+      <h2>Contato</h2>
+      <form action="/enviar-contato" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}"
+        />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <!-- Exercício 6: Página de Equipe -->
+    <section id="exercicio-6">
+      <h2>Nossa Equipe</h2>
+      <figure>
+        <img
+          src="/DevWeb_CursoTec2/exercicios05-09/imagens/Milhouse_Van_Houten.png"
+          alt="Membro 1"
+        />
+        <figcaption>Membro 1 - Desenvolvedor</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="/DevWeb_CursoTec2/exercicios05-09/imagens/Bart_Simpson_200px.png"
+          alt="Membro 2"
+        />
+        <figcaption>Membro 2 - Designer</figcaption>
+      </figure>
+    </section>
+
+    <!-- Exercício 7: Ancoragens Internas -->
+    <section id="exercicio-7">
+      <nav>
+        <a href="#seção1">Seção 1</a>
+        <a href="#seção2">Seção 2</a>
+        <a href="#seção3">Seção 3</a>
+      </nav>
+
+      <section id="seção1">
+        <h2>Seção 1</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ut
+          id tempore cum libero aspernatur officiis praesentium vero. Fugit amet
+          dolores dignissimos asperiores a molestiae optio aspernatur alias
+          possimus facere!.
+        </p>
+      </section>
+
+      <section id="seção2">
+        <h2>Seção 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum placeat
+          dolorem voluptatem, facilis suscipit maiores nobis repudiandae
+          voluptates, eligendi laborum soluta ratione, reprehenderit beatae quae
+          nulla porro? Quae, nostrum fuga?.
+        </p>
+      </section>
+
+      <section id="seção3">
+        <h2>Seção 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit cumque
+          non modi enim, beatae in voluptate aperiam vero eveniet ab! Illum amet
+          pariatur nobis distinctio voluptatem, tempore necessitatibus
+          accusantium repellat..
+        </p>
+      </section>
+    </section>
+
+    <!-- Exercício 8: Formulário com Validação -->
+    <section id="exercicio-8">
+      <h2>Cadastro para Evento</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" minlength="8" required />
+
+        <label for="confirmar-senha">Confirmar Senha:</label>
+        <input
+          type="password"
+          id="confirmar-senha"
+          name="confirmar-senha"
+          required
+        />
+
+        <input type="submit" value="Cadastrar" />
+      </form>
+    </section>
+  </body>
+</html>

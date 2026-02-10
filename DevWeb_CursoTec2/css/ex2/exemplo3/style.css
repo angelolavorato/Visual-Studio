@@ -1,0 +1,11 @@
+/* Seletor de classe */
+.paragrafo {
+  color: blue;
+} /* Seletor de tipo */
+p {
+  color: green;
+} /* Seletor de ID tem
+maior especificidade */
+#importante {
+  color: red;
+}

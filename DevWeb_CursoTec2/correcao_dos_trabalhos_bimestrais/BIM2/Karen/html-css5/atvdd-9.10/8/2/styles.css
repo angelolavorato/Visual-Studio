@@ -1,0 +1,7 @@
+.img_fundo {
+    background-image: url(aler.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+  }

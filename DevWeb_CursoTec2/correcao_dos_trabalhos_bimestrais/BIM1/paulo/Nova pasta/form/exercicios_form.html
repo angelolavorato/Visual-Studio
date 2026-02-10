@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resolução dos Exercícios sobre Form</title>
+  </head>
+  <body>
+    <section id="exercicio1">
+      <!--1. Formulário de cadastro de usuário-->
+      <h2>1.Formulário de cadastro</h2>
+      <form action="submit" method="post">
+        <label for="name">Nome: </label>
+        <input type="text" id="nome" name="nome" required /> <br /><br />
+
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@exemplo.com"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="senha">Senha: </label>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          minlength="8"
+          required
+        /><br /><br />
+
+        <label for="confirmasenha">Confirme Sua Senha: </label>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          minlength="8"
+          required
+        /><br /><br />
+
+        <button type="submit">Enviar Dados</button>
+      </form>
+    </section>
+    <hr />
+    <section id="exercicio2">
+      <!--2. Feedback do produto-->
+      <h2>2.Formulário de Feedback do produto</h2>
+      <form action="submit-feedback" method="post">
+        <label for="nomeCliente">Nome do Cliente: </label>
+        <input type="text" name="nomeCliente" id="nomeCliente" required />
+        <br /><br />
+
+        <label for="emailCliente">Email do Cliente: </label>
+        <input
+          type="email"
+          name="emailCliente"
+          id="emailCliente"
+          placeholder="email@exemplo.com"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="avaliaProduto">Avaliação do produto: </label>
+        <input type="radio" name="option" value="1" />
+        <label for="1">1</label>
+        <input type="radio" name="option" value="2" />
+        <label for="">2</label>
+        <input type="radio" name="option" value="3" />
+        <label for="">3</label>
+        <input type="radio" name="option" value="4" />
+        <label for="">4</label>
+        <input type="radio" name="option" value="5" />
+        <label for="">5</label><br /><br />
+
+        <label for="comentarios">Comentários Adicionais: </label><br />
+        <textarea name="comentarios" id="comentarios"></textarea><br />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <hr />
+    <section id="exercicio3">
+      <!--3. Notificações-->
+      <h2>3.Formulário para Selecionar Preferências de Notificação</h2>
+      <label for="nomeCliente">Nome do Cliente: </label>
+      <input type="text" name="nomeCliente" id="nomeCliente" required />
+      <br /><br />
+
+      <form action="submit_preferences">
+        <label for="emailNotificacao">Email de Notificação: </label>
+        <input
+          type="email"
+          name="emailNotificacao"
+          id="emailNotificacao"
+          placeholder="email@exemplo.com"
+          required
+        />
+        <br /><br />
+
+        <label>Selecione as Opções de Notificação: </label><br />
+        <input type="checkbox" name="notificacao-email" value="futebol" />Email
+        <br />
+        <input type="checkbox" name="notificacao-sms" value="leitura" />SMS
+        <br />
+        <input type="checkbox" name="notificacao-push" value="leitura" />Push
+        (APP)
+        <br />
+        <br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <hr />
+    <section id="exercicio4">
+      <!--Formulário de Upload de Arquivo-->
+      <h2>4.Upload de Arquivo</h2>
+      <form action="submit-arquivo" method="post">
+        <label for="name">Nome: </label>
+        <input type="text" id="nome" name="nome" required /> <br /><br />
+
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@exemplo.com"
+          required
+        />
+        <br /><br />
+        <label for="arquivo">Arquivo: </label>
+        <input type="file" name="arquivo" id="arquivo" /><br /><br />
+
+        <button type="submit">Enviar Arquivo</button>
+      </form>
+    </section>
+    <hr />
+
+    <section id="exercicio5">
+      <!--5. Reserva de Hotel-->
+      <h2>5.Formulário para Reserva de Hotel</h2>
+      <form action="submit-reserva" method="post">
+        <label for="name">Nome: </label>
+        <input type="text" id="nome" name="nome" required /> <br /><br />
+
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@exemplo.com"
+          required
+        />
+        <br /><br />
+
+        <label for="checkin">Data de Checkin:</label>
+        <input type="date" id="checkin" name="checkin" required /> <br />
+        <br />
+        <label for="checkout">Data de Checkout:</label>
+        <input type="date" id="checkout" name="checkout" required /><br /><br />
+
+        <label for="quarto">Escolha o Tipo de Quarto: </label>
+        <select name="quarto" id="quarto">
+          <option value="quarto-simples">Quarto Simples</option>
+          <option value="quarto-duplo">Quarto Duplo</option>
+          <option value="quarto-suite">Suíte</option></select
+        ><br /><br />
+        <label for="cafe">Café da Manhã?</label>
+        <input type="checkbox" /><br /><br />
+
+        <button type="submit">Enviar Reserva</button>
+      </form>
+    </section>
+    <footer>Paulo Cesar M.F</footer>
+  </body>
+</html>
