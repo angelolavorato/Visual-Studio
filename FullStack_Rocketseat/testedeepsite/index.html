@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercícios HTML/CSS/JS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Custom CSS for specific elements */
+      .gradient-bg {
+        background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+      }
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      #passwordError,
+      #confirmPasswordError {
+        display: none;
+        color: #ef4444;
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Navigation Menu with Anchor Links -->
+    <nav class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-4">
+            <a href="#" class="text-2xl font-bold">Logo</a>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#header" class="hover:text-gray-200 transition">Início</a>
+            <a href="#tasks" class="hover:text-gray-200 transition">Tarefas</a>
+            <a href="#video" class="hover:text-gray-200 transition">Vídeo</a>
+            <a href="#schedule" class="hover:text-gray-200 transition"
+              >Horários</a
+            >
+            <a href="#contact" class="hover:text-gray-200 transition"
+              >Contato</a
+            >
+            <a href="#team" class="hover:text-gray-200 transition">Equipe</a>
+            <a href="#events" class="hover:text-gray-200 transition">Eventos</a>
+          </div>
+          <button class="md:hidden focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Exercise 1: Custom Header -->
+    <header id="header" class="gradient-bg text-white py-12">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center"
+      >
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Logo"
+          class="w-32 h-32 rounded-full border-4 border-white shadow-lg mb-6 md:mb-0 md:mr-8"
+        />
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-bold mb-2">Empresa Incrível</h1>
+          <h2 class="text-xl md:text-2xl opacity-90">
+            Transformando ideias em realidade
+          </h2>
+          <div class="mt-4 flex justify-center md:justify-start space-x-4">
+            <button
+              class="bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition"
+            >
+              Saiba Mais
+            </button>
+            <button
+              class="border border-white text-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-blue-600 transition"
+            >
+              Contato
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+      <!-- Exercise 2: Task List -->
+      <section id="tasks" class="mb-16 bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+          <i class="fas fa-tasks mr-3 text-blue-500"></i> Lista de Tarefas
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              Tarefas Pendentes
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-6 h-6 bg-blue-100 text-blue-600 rounded-full mr-3 mt-1"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </span>
+                <span>Finalizar projeto HTML</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-6 h-6 bg-blue-100 text-blue-600 rounded-full mr-3 mt-1"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </span>
+                <span>Revisar código CSS</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-6 h-6 bg-blue-100 text-blue-600 rounded-full mr-3 mt-1"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </span>
+                <span>Testar funcionalidades JavaScript</span>
+                <ol class="ml-8 mt-2 space-y-2 text-sm text-gray-600">
+                  <li>1. Testar validação de formulário</li>
+                  <li>2. Verificar interações de UI</li>
+                  <li>3. Testar responsividade</li>
+                </ol>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-6 h-6 bg-blue-100 text-blue-600 rounded-full mr-3 mt-1"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </span>
+                <span>Enviar relatório para o cliente</span>
+              </li>
+              <li class="flex items-start">
+                <span
+                  class="flex items-center justify-center w-6 h-6 bg-blue-100 text-blue-600 rounded-full mr-3 mt-1"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </span>
+                <span>Atualizar documentação</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4">
+              Adicionar Nova Tarefa
+            </h3>
+            <form class="space-y-4">
+              <div>
+                <label
+                  for="taskName"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Nome da Tarefa</label
+                >
+                <input
+                  type="text"
+                  id="taskName"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+              <div>
+                <label
+                  for="taskPriority"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Prioridade</label
+                >
+                <select
+                  id="taskPriority"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <option>Baixa</option>
+                  <option>Média</option>
+                  <option>Alta</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  for="taskDescription"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Descrição</label
+                >
+                <textarea
+                  id="taskDescription"
+                  rows="3"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition"
+              >
+                Adicionar Tarefa
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 3: YouTube Video -->
+      <section id="video" class="mb-16 bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+          <i class="fas fa-video mr-3 text-red-500"></i> Vídeo Tutorial
+        </h2>
+        <div class="aspect-w-16 aspect-h-9 w-full max-w-4xl mx-auto">
+          <iframe
+            class="w-full h-96 rounded-lg shadow"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mt-6 text-center">
+          <p class="text-gray-600">
+            Aprenda com nossos tutoriais em vídeo para dominar as técnicas mais
+            recentes.
+          </p>
+          <button
+            class="mt-4 bg-red-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-red-700 transition flex items-center mx-auto"
+          >
+            <i class="fab fa-youtube mr-2"></i> Inscreva-se no Canal
+          </button>
+        </div>
+      </section>
+
+      <!-- Exercise 4: Schedule Table -->
+      <section id="schedule" class="mb-16 bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+          <i class="fas fa-calendar-alt mr-3 text-green-500"></i> Tabela de
+          Horários
+        </h2>
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white rounded-lg overflow-hidden">
+            <caption class="text-lg font-semibold text-gray-800 mb-4 text-left">
+              Horário Semanal de Atividades
+            </caption>
+            <thead class="bg-gray-100">
+              <tr>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Horário
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Segunda
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Terça
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Quarta
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Quinta
+                </th>
+                <th
+                  class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                >
+                  Sexta
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td
+                  class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+                >
+                  08:00 - 10:00
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Reunião de Equipe
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Desenvolvimento
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Planejamento
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Desenvolvimento
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Retrospectiva
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+                >
+                  10:00 - 12:00
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Desenvolvimento
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Revisão de Código
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Desenvolvimento
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Treinamento
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Desenvolvimento
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+                >
+                  13:00 - 15:00
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Almoço
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Almoço
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Almoço
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Almoço
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Almoço
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+                >
+                  15:00 - 17:00
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Testes
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Desenvolvimento
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Testes
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Desenvolvimento
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  Integração Contínua
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Exercise 5: Contact Form -->
+      <section id="contact" class="mb-16 bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+          <i class="fas fa-envelope mr-3 text-purple-500"></i> Formulário de
+          Contato
+        </h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <form class="space-y-6">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Nome Completo*</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Email*</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                />
+              </div>
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Telefone</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  pattern="[0-9]{10,11}"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                />
+                <p class="text-xs text-gray-500 mt-1">Formato: 11987654321</p>
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Assunto</label
+                >
+                <select
+                  id="subject"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                >
+                  <option>Selecione um assunto</option>
+                  <option>Dúvida</option>
+                  <option>Sugestão</option>
+                  <option>Reclamação</option>
+                  <option>Elogio</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Mensagem*</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-purple-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition w-full"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+          <div class="bg-purple-50 rounded-xl p-8 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-purple-800 mb-4">
+              Informações de Contato
+            </h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-map-marker-alt text-purple-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Endereço</h4>
+                  <p class="text-gray-600">
+                    Rua Exemplo, 123 - Centro<br />São Paulo/SP - CEP 01001-000
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-phone-alt text-purple-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Telefone</h4>
+                  <p class="text-gray-600">
+                    (11) 98765-4321<br />(11) 1234-5678
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-envelope text-purple-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">Email</h4>
+                  <p class="text-gray-600">
+                    contato@empresa.com<br />suporte@empresa.com
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                  <i class="fas fa-clock text-purple-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-800">
+                    Horário de Atendimento
+                  </h4>
+                  <p class="text-gray-600">
+                    Segunda a Sexta: 9h às 18h<br />Sábado: 9h às 13h
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 6: Team Page -->
+      <section id="team" class="mb-16 bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+          <i class="fas fa-users mr-3 text-orange-500"></i> Nossa Equipe
+        </h2>
+        <p class="text-gray-600 mb-8 max-w-3xl">
+          Conheça os talentosos profissionais que fazem nossa empresa ser
+          referência no mercado. Nossa equipe multidisciplinar está pronta para
+          atender todas as suas necessidades com excelência e criatividade.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="team-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/women/43.jpg"
+              alt="Team Member"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800">Ana Silva</h3>
+              <p class="text-orange-500 font-medium mb-3">CEO & Fundadora</p>
+              <p class="text-gray-600 text-sm">
+                Com mais de 15 anos de experiência no mercado, Ana lidera nossa
+                empresa com visão estratégica e paixão por inovação.
+              </p>
+              <div class="flex space-x-3 mt-4">
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="team-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Team Member"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800">Carlos Mendes</h3>
+              <p class="text-orange-500 font-medium mb-3">
+                Diretor de Tecnologia
+              </p>
+              <p class="text-gray-600 text-sm">
+                Especialista em arquitetura de sistemas, Carlos garante que
+                nossa tecnologia esteja sempre na vanguarda do mercado.
+              </p>
+              <div class="flex space-x-3 mt-4">
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="team-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/women/65.jpg"
+              alt="Team Member"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800">Juliana Costa</h3>
+              <p class="text-orange-500 font-medium mb-3">Designer Chefe</p>
+              <p class="text-gray-600 text-sm">
+                Com um olhar único para detalhes, Juliana cria experiências
+                visuais que encantam nossos clientes e usuários.
+              </p>
+              <div class="flex space-x-3 mt-4">
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fab fa-behance"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fab fa-dribbble"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="team-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300"
+          >
+            <img
+              src="https://randomuser.me/api/portraits/men/75.jpg"
+              alt="Team Member"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800">Roberto Alves</h3>
+              <p class="text-orange-500 font-medium mb-3">
+                Gerente de Projetos
+              </p>
+              <p class="text-gray-600 text-sm">
+                Com metodologias ágeis, Roberto garante que todos os projetos
+                sejam entregues no prazo e com qualidade excepcional.
+              </p>
+              <div class="flex space-x-3 mt-4">
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fab fa-slack"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-500 transition"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Exercise 8: Event Registration Form with Validation -->
+      <section id="events" class="bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+          <i class="fas fa-calendar-check mr-3 text-indigo-500"></i> Cadastro
+          para Evento
+        </h2>
+        <div class="max-w-2xl mx-auto">
+          <form class="space-y-6" onsubmit="return validateForm()">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  for="firstName"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Nome*</label
+                >
+                <input
+                  type="text"
+                  id="firstName"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                />
+              </div>
+              <div>
+                <label
+                  for="lastName"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Sobrenome*</label
+                >
+                <input
+                  type="text"
+                  id="lastName"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                for="eventEmail"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Email*</label
+              >
+              <input
+                type="email"
+                id="eventEmail"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              />
+            </div>
+            <div>
+              <label
+                for="eventPhone"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Telefone*</label
+              >
+              <input
+                type="tel"
+                id="eventPhone"
+                required
+                pattern="[0-9]{10,11}"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              />
+              <p class="text-xs text-gray-500 mt-1">Formato: 11987654321</p>
+            </div>
+            <div>
+              <label
+                for="eventSelect"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Evento*</label
+              >
+              <select
+                id="eventSelect"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              >
+                <option value="">Selecione um evento</option>
+                <option>Workshop de Design</option>
+                <option>Conferência de Tecnologia</option>
+                <option>Treinamento em Marketing Digital</option>
+                <option>Meetup de Desenvolvimento</option>
+              </select>
+            </div>
+            <div>
+              <label
+                for="password"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Senha*</label
+              >
+              <input
+                type="password"
+                id="password"
+                required
+                minlength="8"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                oninput="validatePassword()"
+              />
+              <p id="passwordError" class="mt-1">
+                A senha deve ter pelo menos 8 caracteres.
+              </p>
+            </div>
+            <div>
+              <label
+                for="confirmPassword"
+                class="block text-sm font-medium text-gray-700 mb-1"
+                >Confirmar Senha*</label
+              >
+              <input
+                type="password"
+                id="confirmPassword"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                oninput="validatePassword()"
+              />
+              <p id="confirmPasswordError" class="mt-1">
+                As senhas não coincidem.
+              </p>
+            </div>
+            <div class="flex items-start">
+              <div class="flex items-center h-5">
+                <input
+                  id="terms"
+                  name="terms"
+                  type="checkbox"
+                  required
+                  class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                />
+              </div>
+              <div class="ml-3 text-sm">
+                <label for="terms" class="font-medium text-gray-700"
+                  >Eu concordo com os
+                  <a href="#" class="text-indigo-600 hover:text-indigo-500"
+                    >Termos de Serviço</a
+                  >
+                  e
+                  <a href="#" class="text-indigo-600 hover:text-indigo-500"
+                    >Política de Privacidade</a
+                  ></label
+                >
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition flex items-center justify-center"
+            >
+              <i class="fas fa-paper-plane mr-2"></i> Cadastrar no Evento
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="gradient-bg text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Empresa Incrível</h3>
+            <p class="text-gray-200">
+              Transformando ideias em realidade através de soluções inovadoras e
+              tecnologia de ponta.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Links Rápidos</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#header"
+                  class="text-gray-200 hover:text-white transition"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#tasks"
+                  class="text-gray-200 hover:text-white transition"
+                  >Tarefas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#video"
+                  class="text-gray-200 hover:text-white transition"
+                  >Vídeo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#schedule"
+                  class="text-gray-200 hover:text-white transition"
+                  >Horários</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Contato</h4>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-2"></i> Rua Exemplo, 123 - SP
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone-alt mr-2"></i> (11) 9876-5432
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope mr-2"></i> contato@empresa.com
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Redes Sociais</h4>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="bg-white bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-20 transition"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-20 transition"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-20 transition"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-20 transition"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-gray-200"
+        >
+          <p>&copy; 2023 Empresa Incrível. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Password validation function
+      function validatePassword() {
+        const password = document.getElementById('password')
+        const confirmPassword = document.getElementById('confirmPassword')
+        const passwordError = document.getElementById('passwordError')
+        const confirmPasswordError = document.getElementById(
+          'confirmPasswordError'
+        )
+
+        // Reset error messages
+        passwordError.style.display = 'none'
+        confirmPasswordError.style.display = 'none'
+
+        // Validate password length
+        if (password.value.length > 0 && password.value.length < 8) {
+          passwordError.style.display = 'block'
+          return false
+        }
+
+        // Validate password match
+        if (
+          confirmPassword.value !== password.value &&
+          confirmPassword.value.length > 0
+        ) {
+          confirmPasswordError.style.display = 'block'
+          return false
+        }
+
+        return true
+      }
+
+      // Form validation function
+      function validateForm() {
+        if (!validatePassword()) {
+          return false
+        }
+
+        // If validation passes, show success message
+        alert('Cadastro realizado com sucesso!')
+        return true
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          })
+        })
+      })
+    </script>
+  </body>
+</html>
