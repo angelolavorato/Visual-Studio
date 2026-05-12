@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <h1>Arrow Function</h1>
+    <p>
+      Arrow functions são uma forma mais concisa de escrever funções em
+      JavaScript. Elas foram introduzidas no ES6 e são especialmente úteis para
+      funções anônimas.
+    </p>
+    <p>A sintaxe básica de uma arrow function é:</p>
+    <pre><code>(param1, param2) => {
+  // corpo da função  
+}</code></pre>
+    <p>
+      Se a função tiver apenas um parâmetro, os parênteses podem ser omitidos:
+    </p>
+    <pre><code>param => { 
+  // corpo da função
+}</code></pre>
+    <p>
+      E se a função tiver apenas uma expressão, as chaves e a palavra-chave
+      <code>return</code> podem ser omitidos:
+    </p>
+    <pre><code>(param1, param2) => param1 + param2;</code></pre>
+    <p>
+      Arrow functions também têm um comportamento diferente em relação ao
+      contexto de <code>this</code>, o que as torna úteis em certos casos, como
+      em callbacks. Elas não têm seu próprio <code>this</code>, mas herdam o
+      valor de <code>this</code> do contexto onde foram definidas.
+    </p>
+    <p>
+      Veja o arquivo .js para exemplos de arrow functions em ação.
+      <script src="scripts.js"></script>
+    </p>
+  </body>
+</html>
