@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback Function</title>
+  </head>
+  <body>
+    <h1>Callback Function</h1>
+    <p>
+      Uma callback function é uma função que é passada como argumento para outra
+      função e é executada após a conclusão de uma operação assíncrona.
+    </p>
+    <p>
+      As callbacks são usadas para lidar com operações que levam tempo, como
+      requisições de rede, leitura de arquivos ou temporizadores.
+    </p>
+    <p>
+      Por exemplo, imagine que você quer buscar dados de um servidor. Você pode
+      usar uma função de callback para processar os dados assim que eles forem
+      recebidos, sem bloquear o restante do código.
+    </p>
+    <pre><code>function fetchData(callback) {
+        setTimeout(() => {
+          const data = { message: 'Dados recebidos!' };
+          callback(data);
+        }, 1000);
+      }
+</code></pre>
+    <p>
+      Neste exemplo, a função <code>fetchData</code> simula uma operação
+      assíncrona usando <code>setTimeout</code>. Após 1 segundo, ela chama a
+      função de callback, passando os dados como argumento.
+    </p>
+
+    <p>
+      Você pode usar essa função assim:
+      <pre><code>fetchData((data) => {
+  console.log(data.message);
+});
+</code></pre>
+      Aqui, a função de callback é definida como uma função anônima que recebe os dados e imprime a mensagem no console.
+    </p>  
+      <p>
+      Resumindo:
+      <ul>
+        <li>Uma callback function é uma função passada como argumento para outra função.</li>
+        <li>Ela é executada após a conclusão de uma operação assíncrona.</li>
+        <li>As callbacks ajudam a lidar com operações que levam tempo sem bloquear o restante do código.</li>
+      </ul>
+    </p>
+      <script src="scripts.js"></script>
+  </body>
+</html>
