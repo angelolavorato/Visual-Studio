@@ -42,17 +42,37 @@ console.log(guests)
 //*************************************
 // AULA 4 - Manipulando Conteúdo */
 
-const guest = document.querySelector('#guest-1')
+//const guest = document.querySelector('#guest-1')
 //console.log(guest) //isso aqui me mostra o elemento inteiro, ou seja, a tag li com o span dentro
 
 //Como exibir o conteúdo do elemento como texto
-console.log(guest.textContent) //Retorna o conteúdo vísível e oculto do elemento, ou seja, o texto que tem dentro do li e o texto que tem dentro do span
+//console.log(guest.textContent) //Retorna o conteúdo vísível e oculto do elemento, ou seja, o texto que tem dentro do li e o texto que tem dentro do span
 
 //guest.textContent = 'POMPEU' //Alterando o conteúdo do elemento (cuidado que isso elimina a tag span que tem dentro do li)
 
 //para que isso não aconteça, é só adicionar um espaço span lá no #guest-1, assim o conteúdo do span não é eliminado ficando #guest-1 span
 
 //Outras formas de acessar o conteúdo do elemento
-console.log(guest.innerText) //Retorna somente o conteúdo visível
+//console.log(guest.innerText) //Retorna somente o conteúdo visível
 
-console.log(guest.innerHTML) //Retorna o HTML como texto.
+//console.log(guest.innerHTML) //Retorna o HTML como texto.
+
+/********************************************** */
+//AULA 5 - Alterando Estilos
+
+//Lembrar de adicionar o class="input-error" no html pra demonstrar o erro chamado no css
+
+//Como fazer a borda vermelha aparecer no input através do javascript
+const input = document.querySelector('#name')
+//input.classList.add('input-error') //Adiciona a classe input-error no elemento input, fazendo com que a borda vermelha apareça
+
+//Como remover a borda vermelha do input (ou mesmo uma classe nesse caso)
+//input.classList.remove('input-error') //Remove a classe input-error do elemento input, fazendo com que a borda vermelha desapareça
+
+//Se não tiver a classe adiciona. Se tem, remove
+//Propriedade toggle, que adiciona a classe se ela não existir e remove se ela existir
+//input.classList.toggle('input-error') //Adiciona a classe input-error se ela não existir e remove se ela existir
+
+//Posso utilizar um elemento direto alterando as propriedades de estilo css do elemento"
+const button = document.querySelector('button')
+button.style.backgroundColor = 'red' //Alterando a cor do background do botão para vermelho
