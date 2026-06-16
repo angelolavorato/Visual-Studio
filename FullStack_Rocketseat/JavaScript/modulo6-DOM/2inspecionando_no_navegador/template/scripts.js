@@ -43,15 +43,16 @@ console.log(guests)
 // AULA 4 - Manipulando Conteúdo */
 
 const guest = document.querySelector('#guest-1')
-console.log(guest)
+//console.log(guest) //isso aqui me mostra o elemento inteiro, ou seja, a tag li com o span dentro
+
 //Como exibir o conteúdo do elemento como texto
-console.log(guest.textContent) //Retorna o conteúdo como texto
+console.log(guest.textContent) //Retorna o conteúdo vísível e oculto do elemento, ou seja, o texto que tem dentro do li e o texto que tem dentro do span
 
 //guest.textContent = 'POMPEU' //Alterando o conteúdo do elemento (cuidado que isso elimina a tag span que tem dentro do li)
 
 //para que isso não aconteça, é só adicionar um espaço span lá no #guest-1, assim o conteúdo do span não é eliminado ficando #guest-1 span
 
 //Outras formas de acessar o conteúdo do elemento
-console.log(guest.innerText) //Retorna o conteúdo do elemento como texto, mas respeitando a formatação (quebra de linha, etc)
+console.log(guest.innerText) //Retorna somente o conteúdo visível
 
-console.log(guest.innerHTML) //Retorna o conteúdo do elemento como HTML, ou seja, com as tags
+console.log(guest.innerHTML) //Retorna o HTML como texto.
