@@ -63,7 +63,7 @@ console.log(guests)
 //Lembrar de adicionar o class="input-error" no html pra demonstrar o erro chamado no css
 
 //Como fazer a borda vermelha aparecer no input através do javascript
-const input = document.querySelector('#name')
+//const input = document.querySelector('#name')
 //input.classList.add('input-error') //Adiciona a classe input-error no elemento input, fazendo com que a borda vermelha apareça
 
 //Como remover a borda vermelha do input (ou mesmo uma classe nesse caso)
@@ -74,5 +74,33 @@ const input = document.querySelector('#name')
 //input.classList.toggle('input-error') //Adiciona a classe input-error se ela não existir e remove se ela existir
 
 //Posso utilizar um elemento direto alterando as propriedades de estilo css do elemento"
-const button = document.querySelector('button')
-button.style.backgroundColor = 'red' //Alterando a cor do background do botão para vermelho
+//const button = document.querySelector('button')
+//button.style.backgroundColor = 'red' //Alterando a cor do background do botão para vermelho
+
+/*************************************************************************  */
+//Aula 6 - Criando Elementos
+
+const guests = document.querySelector('ul') //Selecionando a ul
+//console.log(guests)//isso aqui só foi usado para mostrar a ul, mas o objetivo é criar um elemento li dentro da ul
+
+//Criando um elemento li
+const newGuest = document.createElement('li')
+newGuest.classList.add('guest') //Adicionando a classe guest no elemento li criado
+const guestName = document.createElement('span') //Criando um elemento span para colocar o nome do convidado dentro do li
+
+guestName.textContent = 'POMPEU' //Adicionando o nome do convidado no span
+const guestSurname = document.createElement('span') //Criando um elemento span para colocar o sobrenome do convidado dentro do li
+guestSurname.textContent = 'POMPILHO' //Adicionando o sobrenome do convidado no span
+
+//newGuest.append(guestName, guestSurname) //Adicionando o span dentro do li, o append adiciona após o último filho
+//newGuest.prepend(guestSurname) //Adicionando o span do sobrenome dentro do li
+
+//Método mais simples para adicionar o nome e o sobrenome do convidado dentro do li
+newGuest.appendChild(guestName) //Adicionando o span do nome dentro do li
+
+console.log(newGuest) //Isso aqui mostra o li com o span dentro, mas ainda não tem o sobrenome
+
+//Para adicionar na tela mesmo ao invés nas ferramentas de desenvolvedor
+guests.appendChild(newGuest) //adicionando um novo elemento, mas ele está sem a classe
+//Para adicionar a classe do elemento li
+
