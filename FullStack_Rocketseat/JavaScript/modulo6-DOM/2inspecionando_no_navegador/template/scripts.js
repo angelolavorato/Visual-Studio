@@ -137,3 +137,25 @@ addEventListener('click', event => {
 //Nesta aula, aprendemos a identificar eventos em elementos específicos em JavaScript. Foi mostrado como observar o evento de scroll em uma lista, exibindo informações como a distância do topo da lista. Também foi demonstrado como manipular o scroll, levando o usuário de volta ao topo da lista. Além disso, vimos como adicionar eventos de clique em botões específicos. A importância de desabilitar o comportamento padrão do evento de clique também foi destacada.
 
 //Adicionar mais elementos na lista para que o scroll funcione
+//Selecionando um elemento específico, no caso, a lista de convidados
+
+const ul = document.querySelector('ul')
+
+ul.addEventListener('scroll', () => {
+  console.log(ul.scrollTop) //Isso aqui vai aparecer no console quando eu der scroll na lista, mostrando o evento scroll
+  if (ul.scrollTop > 223) {
+    console.log('FIM DA LISTA')
+
+    ul.scrollTo({
+      top: 0,
+      behavior: 'smooth' //Isso aqui vai fazer com que o scroll volte para o topo da lista de forma suave
+    })
+  }
+})
+
+//Testando com um botão
+const button = document.querySelector('button')
+button.addEventListener('click', event => {
+  event.preventDefault() //Isso aqui vai impedir que o evento click seja disparado, ou seja, não vai acontecer nada quando eu clicar no botão
+  console.log('BUTTON CLICKED')
+})
