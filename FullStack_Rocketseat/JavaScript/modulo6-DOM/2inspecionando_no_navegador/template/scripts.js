@@ -139,7 +139,7 @@ addEventListener('click', event => {
 //Adicionar mais elementos na lista para que o scroll funcione
 //Selecionando um elemento específico, no caso, a lista de convidados
 
-const ul = document.querySelector('ul')
+/*const ul = document.querySelector('ul')
 
 ul.addEventListener('scroll', () => {
   console.log(ul.scrollTop) //Isso aqui vai aparecer no console quando eu der scroll na lista, mostrando o evento scroll
@@ -159,3 +159,29 @@ button.addEventListener('click', event => {
   event.preventDefault() //Isso aqui vai impedir que o evento click seja disparado, ou seja, não vai acontecer nada quando eu clicar no botão
   console.log('BUTTON CLICKED')
 })
+****************************************************************************/
+//Aula 10 - Eventos de formulário
+//Nesta aula, focamos nos eventos de formulário, mostrando como selecionar um formulário e lidar com eventos como OnSubmit. Expliquei a diferença entre usar OnSubmit diretamente e addEventListener, destacando que OnSubmit considera apenas o último listener criado, enquanto addEventListener executa todos. Demonstrei na prática como isso afeta o comportamento dos eventos. Essas diferenças são importantes para escolher a abordagem correta ao lidar com eventos em formulários.
+
+//Selecionando o formulário
+const form = document.querySelector('form')
+
+form.onsubmit = event => {
+  event.preventDefault()
+  console.log('Você fez submit no formulário #1')
+}
+form.onsubmit = event => {
+  event.preventDefault()
+  console.log('Você fez submit no formulário #2')
+}
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  console.log('Você fez submit no formulario #3')
+})
+
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  console.log('Você fez submit no formulario #4')
+})
+// se voce usar o onsubmit, ele vai considerar apenas o último listener criado, enquanto o addEventListener vai executar todos os listeners criados.
