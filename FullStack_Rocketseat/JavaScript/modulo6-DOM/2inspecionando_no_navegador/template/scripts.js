@@ -79,7 +79,7 @@ console.log(guests)
 
 /*************************************************************************  */
 //Aula 6 - Criando Elementos
-
+/*
 const guests = document.querySelector('ul') //Selecionando a ul
 //console.log(guests)//isso aqui só foi usado para mostrar a ul, mas o objetivo é criar um elemento li dentro da ul
 
@@ -103,4 +103,37 @@ console.log(newGuest) //Isso aqui mostra o li com o span dentro, mas ainda não 
 //Para adicionar na tela mesmo ao invés nas ferramentas de desenvolvedor
 guests.appendChild(newGuest) //adicionando um novo elemento, mas ele está sem a classe
 //Para adicionar a classe do elemento li
+*************************************************************************************************************************/
 
+//AULA 7 - MANIPULANDO ATRIBUTOS
+//vamos selecionar o input do meu projeto
+//const input = document.querySelector('input')
+
+//input.setAttribute('disabled', 'true') //Adicionando o atributo disabled no input bloqueando o input, ou seja, não é possível digitar nada nele
+
+//input.setAttribute('type', 'file')
+
+//Removendo o atributo disabled do input
+//input.removeAttribute('id') //Removendo o atributo disabled do input, assim é possível digitar nele novamente
+
+/****************************************************************************** */
+//Aula 8 - MANIPULANDO EVENTOS
+//São ações que acontecem no navegador, como por exemplo, clicar em um botão, passar o mouse em cima de um elemento, digitar algo em um input, etc
+/*
+window.addEventListener('load', () => {
+  //Quando a página for carregada, o evento load é disparado
+  console.log('Página carregada') //Isso aqui vai aparecer no console quando a página for carregada
+})
+
+addEventListener('click', event => {
+  event.preventDefault() //Isso aqui vai impedir que o evento click seja disparado, ou seja, não vai acontecer nada quando eu clicar em qualquer lugar da página
+  console.log(event) //Isso aqui vai aparecer no console quando eu clicar em qualquer lugar da página, mostrando o evento click
+  console.log(event.target) //Isso aqui vai aparecer no console quando eu clicar em qualquer lugar da página, mostrando o elemento que foi clicado
+})
+*/
+
+/******************************************************************************** */
+//Aula 9 Eventos de um elemento específico
+//Nesta aula, aprendemos a identificar eventos em elementos específicos em JavaScript. Foi mostrado como observar o evento de scroll em uma lista, exibindo informações como a distância do topo da lista. Também foi demonstrado como manipular o scroll, levando o usuário de volta ao topo da lista. Além disso, vimos como adicionar eventos de clique em botões específicos. A importância de desabilitar o comportamento padrão do evento de clique também foi destacada.
+
+//Adicionar mais elementos na lista para que o scroll funcione
