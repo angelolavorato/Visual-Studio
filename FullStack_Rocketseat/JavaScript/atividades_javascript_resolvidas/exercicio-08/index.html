@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 08 - Central de Atendimento</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="support-page">
+    <section class="support-card">
+      <div class="header-area">
+        <span class="badge">Atendimento Online</span>
+        <h1>Central de Atendimento</h1>
+        <p>Preencha os dados abaixo para registrar uma solicitação junto à nossa equipe.</p>
+      </div>
+
+      <form id="formAtendimento">
+        <label for="nome">Nome completo</label>
+        <input id="nome" type="text" placeholder="Digite seu nome">
+
+        <label for="email">E-mail</label>
+        <input id="email" type="email" placeholder="Digite seu e-mail">
+
+        <label for="motivo">Motivo do contato</label>
+        <select id="motivo">
+          <option value="">Selecione uma opção</option>
+          <option value="suporte">Suporte técnico</option>
+          <option value="financeiro">Financeiro</option>
+          <option value="duvidas">Dúvidas gerais</option>
+        </select>
+
+        <button type="submit">Enviar solicitação</button>
+      </form>
+
+      <div id="mensagemFinal" class="response-card">
+        Sua mensagem de confirmação será exibida aqui.
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

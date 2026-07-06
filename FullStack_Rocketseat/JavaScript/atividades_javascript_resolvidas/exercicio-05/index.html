@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 05 - Planos de Assinatura</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <span>StreamPro</span>
+    <h1>Escolha seu Plano</h1>
+    <p>Selecione a opção mais adequada para o seu perfil de consumo.</p>
+  </header>
+
+  <main class="plans-container">
+    <article class="plan-card">
+      <h2>Básico</h2>
+      <p class="price">R$ 19,90</p>
+      <ul>
+        <li>Acesso individual</li>
+        <li>Qualidade padrão</li>
+        <li>Catálogo essencial</li>
+      </ul>
+      <button type="button" data-plano="basico">Selecionar</button>
+    </article>
+
+    <article class="plan-card highlighted">
+      <h2>Padrão</h2>
+      <p class="price">R$ 29,90</p>
+      <ul>
+        <li>Até 2 telas</li>
+        <li>Qualidade HD</li>
+        <li>Catálogo completo</li>
+      </ul>
+      <button type="button" data-plano="padrao">Selecionar</button>
+    </article>
+
+    <article class="plan-card">
+      <h2>Premium</h2>
+      <p class="price">R$ 44,90</p>
+      <ul>
+        <li>Até 4 telas</li>
+        <li>Qualidade 4K</li>
+        <li>Suporte prioritário</li>
+      </ul>
+      <button type="button" data-plano="premium">Selecionar</button>
+    </article>
+  </main>
+
+  <section id="mensagemPlano" class="selected-message">
+    Escolha um plano para visualizar os benefícios.
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

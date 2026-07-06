@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 02 - Calculadora de Consumo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="calculator-card">
+      <header>
+        <span class="tag">Ferramenta Corporativa</span>
+        <h1>Calculadora de Consumo Mensal</h1>
+        <p>Informe o valor unitário e a quantidade consumida para estimar o custo mensal.</p>
+      </header>
+
+      <form id="formConsumo">
+        <label for="valorUnitario">Valor unitário (R$)</label>
+        <input id="valorUnitario" type="number" min="0" step="0.01" placeholder="Ex.: 5.50">
+
+        <label for="quantidade">Quantidade consumida</label>
+        <input id="quantidade" type="number" min="0" step="0.01" placeholder="Ex.: 30">
+
+        <button type="submit">Calcular</button>
+      </form>
+
+      <div id="resultado" class="result-box">
+        O resultado será exibido aqui.
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

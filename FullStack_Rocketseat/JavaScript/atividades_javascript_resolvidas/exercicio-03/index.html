@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 03 - Verificação de Acesso</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="login-page">
+    <section class="access-card">
+      <div class="icon">🔐</div>
+      <h1>Verificação de Acesso</h1>
+      <p>Digite sua idade para verificar se você possui autorização para acessar a área restrita.</p>
+
+      <div class="form-group">
+        <label for="idade">Idade do usuário</label>
+        <input id="idade" type="number" min="0" placeholder="Ex.: 18">
+      </div>
+
+      <button id="btnVerificar" type="button">Verificar</button>
+
+      <div id="mensagem" class="message">
+        Aguardando verificação.
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

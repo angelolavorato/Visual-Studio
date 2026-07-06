@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 04 - Classificação de Notas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="school-panel">
+      <header>
+        <span class="label">Sistema Acadêmico</span>
+        <h1>Classificação de Desempenho</h1>
+        <p>Digite uma nota entre 0 e 100 para classificar o desempenho do aluno.</p>
+      </header>
+
+      <div class="grade-form">
+        <label for="nota">Nota final</label>
+        <input id="nota" type="number" min="0" max="100" placeholder="Ex.: 85">
+        <button id="btnClassificar" type="button">Classificar</button>
+      </div>
+
+      <div id="resultado" class="result">
+        A classificação aparecerá aqui.
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Faixa</th>
+            <th>Classificação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>90 a 100</td>
+            <td>Excelente</td>
+          </tr>
+          <tr>
+            <td>70 a 89</td>
+            <td>Bom</td>
+          </tr>
+          <tr>
+            <td>50 a 69</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td>0 a 49</td>
+            <td>Insuficiente</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
